@@ -1,0 +1,110 @@
+header
+{
+    backdrop-filter: blur(10px);       /* Aplica el desenfoque */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);  /* Sombra para profundidad */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil para "vidrio" */
+}
+
+
+header h3
+{
+    /*color: #FDD17A;*/
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;   
+  text-shadow: 0 0 55px #FFFFFF, 0 0 55px #FFFFFF;
+    
+}
+
+header h1{
+    /*color: #FFFFFF;*/
+    color: #FDD17A;
+    font-size: 120px;
+    text-align: center;
+}
+
+header h2{
+    padding-top: 5px;
+    text-align: center;
+    /*color: #3D4A52;*/
+    color: #65717D;
+    padding-bottom: 25px;
+}
+
+#cabezaimg
+{
+    position: absolute;
+    z-index: 0;
+    filter: opacity(20%);
+    /* o filter: brightness(60%) contrast(80%) opacity(25%); si quieres jugar con tono */
+    /*margin-left: 10%;*/
+}
+
+#candelabro{
+    width: 6%;
+    margin-left: 47%;
+}
+
+#planta{
+    position: absolute;
+    z-index: 0;
+    width: 200px;
+    margin-left: 15px;
+    top: 245px;
+}
+
+    .linea-circulo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .linea {
+      width: 20px;
+      height: 1px;
+      /*background-color: #41200E;*/
+      background-color: #765437;
+    }
+
+    #linizq
+    {
+        margin: 0 10px 0 0;
+    }
+
+    #linder{
+        margin: 0 0 0 10px;
+    }
+
+    .circulo {
+      width: 6px;
+      height: 6px;
+      background-color: #765437;
+      border-radius: 50%;
+    }
+
+    .rectangulo
+    {
+        position: absolute;
+        border: 1px solid #765437;
+        padding: 30px 85px;
+        z-index: 1;
+        margin-left: 7%;
+    }
+
+    .boton-container {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .boton-decorado {
+      background-color: #4C210B;
+      font-family: "Federo", sans-serif;
+      color: #FFFFFF;
+      padding: 8px 40px;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+    }

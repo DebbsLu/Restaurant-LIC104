@@ -1,0 +1,85 @@
+/*-------------menu barra------------------------*/
+ul{
+  display: flex;
+  border: 1px solid #6E6E6D;
+  border-radius: 25px;
+ width: fit-content;
+ /* 6E6E6D rgba(3, 4, 2, 0.3);*/
+  background-color: rgba(3, 4, 2, 0.3);
+  padding: 3px 7px 3px 7px;
+  gap: 50px;
+}
+
+#menu
+{
+  display: flex;
+  justify-content: center;
+}
+
+a{
+  display: flex;
+}
+
+.linea2
+{
+      width: 1px;
+      height: 20px;
+      /*background-color: #41200E;*/
+      background-color: #FFFFFF
+}
+
+#lineaizq2
+{
+  margin-left: 25px;
+}
+
+#lineader2
+{
+  margin-right: 25px;
+}
+
+/* unvisited link */
+a:link {
+  color: #FFFFFF;
+}
+
+/* visited link */
+a:visited {
+  color: #C0C0BF;
+}
+
+/* mouse over link */
+a:hover {
+ /* color: #FDD17A*/
+  background: #FDD17A;
+  border-radius: 20px;
+  color: #242D25;
+}
+
+/* selected link */
+a:active {
+  color: #4E3C36;
+}
+
+/*RESSSSSSSSSSSSSPONSIVE------------------------*/
+
+@media screen and (max-width: 768px) {
+  ul {
+    flex-direction: row;
+    align-items: start;
+    gap: 5px;
+    padding: 10px;
+    border: 0;
+  }
+
+  a{
+      border: 1px solid #6E6E6D;
+  border-radius: 25px;
+  padding: 1px 7px 1px 7px;
+  }
+
+  .linea2 {
+    display: none; /* oculta las líneas divisorias en móvil */
+  }
+
+}
