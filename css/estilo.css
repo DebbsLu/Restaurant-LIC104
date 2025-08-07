@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Jaldi:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+body
+{
+    background-color: #65717D;
+    /*background-image: url("../img/aerial-wallpaper-in-birch-1040-mm-architextures.jpg");*/
+}
+
+#cuerponuevo
+{
+font-family: "Elsie Swash Caps", serif;
+background-color: #181818;
+/*background-image: url("../img/waves-black-4000-mm-architextures.jpg");*/
+background-image: url("../img/big-furada-midnight-4000-mm-architextures2.jpg");
+background-size: contain;
+}
+
+header
+{
+    backdrop-filter: blur(10px);       /* Aplica el desenfoque */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);  /* Sombra para profundidad */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil para "vidrio" */
+}
+
+
+header h3
+{
+    /*color: #FDD17A;*/
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;   
+  text-shadow: 0 0 55px #FFFFFF, 0 0 55px #FFFFFF;
+    
+}
+
+header h1{
+    /*color: #FFFFFF;*/
+    color: #FDD17A;
+    font-size: 120px;
+    text-align: center;
+}
+
+header h2{
+    padding-top: 5px;
+    text-align: center;
+    /*color: #3D4A52;*/
+    color: #65717D;
+    padding-bottom: 25px;
+}
+
+#cabezaimg
+{
+    position: absolute;
+    z-index: 0;
+    filter: opacity(20%);
+    /* o filter: brightness(60%) contrast(80%) opacity(25%); si quieres jugar con tono */
+    /*margin-left: 10%;*/
+}
+
+#candelabro{
+    width: 6%;
+    margin-left: 47%;
+}
+
+#planta{
+    position: absolute;
+    z-index: 0;
+    width: 200px;
+    margin-left: 15px;
+    top: 245px;
+}
+
+    .linea-circulo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .linea {
+      width: 20px;
+      height: 1px;
+      /*background-color: #41200E;*/
+      background-color: #765437;
+    }
+
+    #linizq
+    {
+        margin: 0 10px 0 0;
+    }
+
+    #linder{
+        margin: 0 0 0 10px;
+    }
+
+    .circulo {
+      width: 6px;
+      height: 6px;
+      background-color: #765437;
+      border-radius: 50%;
+    }
+
+    .rectangulo
+    {
+        position: absolute;
+        border: 1px solid #765437;
+        padding: 30px 85px;
+        z-index: 1;
+        margin-left: 7%;
+    }
+
+    .boton-container {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .boton-decorado {
+      background-color: #4C210B;
+      font-family: "Federo", sans-serif;
+      color: #FFFFFF;
+      padding: 8px 40px;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+    }
+
+
+/*-------------menu barra------------------------*/
+ul{
+  display: flex;
+  border: 1px solid #6E6E6D;
+  border-radius: 25px;
+ width: fit-content;
+ /* 6E6E6D rgba(3, 4, 2, 0.3);*/
+  background-color: rgba(3, 4, 2, 0.3);
+  padding: 3px 7px 3px 7px;
+  gap: 50px;
+}
+
+#menu
+{
+  display: flex;
+  justify-content: center;
+}
+
+a{
+  display: flex;
+}
+
+.linea2
+{
+      width: 1px;
+      height: 20px;
+      /*background-color: #41200E;*/
+      background-color: #FFFFFF
+}
+
+#lineaizq2
+{
+  margin-left: 25px;
+}
+
+#lineader2
+{
+  margin-right: 25px;
+}
+
+/* unvisited link */
+a:link {
+  color: #FFFFFF;
+}
+
+/* visited link */
+a:visited {
+  color: #C0C0BF;
+}
+
+/* mouse over link */
+a:hover {
+ /* color: #FDD17A*/
+  background: #FDD17A;
+  border-radius: 20px;
+  color: #242D25;
+}
+
+/* selected link */
+a:active {
+  color: #4E3C36;
+}
+
+/*RESSSSSSSSSSSSSPONSIVE------------------------*/
+
+@media screen and (max-width: 768px) {
+  ul {
+    flex-direction: row;
+    align-items: start;
+    gap: 5px;
+    padding: 10px;
+    border: 0;
+  }
+
+  a{
+      border: 1px solid #6E6E6D;
+  border-radius: 25px;
+  padding: 1px 7px 1px 7px;
+  }
+
+  .linea2 {
+    display: none; /* oculta las líneas divisorias en móvil */
+  }
+
+}
+
+/*-----------------------------------------------Lugar--------------------------------*/
+
+#divlugar
+{
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #7D827B;
+  border-radius: 15px;
+  background-color: rgba(3, 4, 3, 0.5);
+}
+
+.edi-ubi
+{
+  padding: 30px 30px 30px 140px;
+
+}
+
+/*--------------------------div edi-ubi--------*/
+
+/*texto de ubicación del lugar*/
+#ubicacion1
+{
+    color: #FFFFFF;
+    font-family: "Federo", sans-serif;
+    font-size: 15px;  
+}
+/*texto de ubicación del lugar*/
+
+.divtexto
+{
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.icono
+{
+  width: 24px;
+  height: 24px;
+}
+
+
+#restaurantfachada{
+  margin-right: 0px;
+  width: 550px;
+  height: auto;
+}
+
+@media (max-width: 992px){
+
+#restaurantfachada{
+  margin-right: 0px;
+    width: 100%;
+    height: auto;
+}
+
+}
+
+
+/*--------------------------div texto dude------------*/
+
+.contenedorlinea
+{
+  display: flex;
+  align-items: center;
+}
+
+.linea3
+{
+  width: 1px;
+  height: 490px;
+  background-color: #7D827B;
+  margin-left: 150px;
+}
+
+/*Mobili 2 imagenes-------------------*/
+
+.mobili
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(3, 4, 3, 0.5);
+  padding: 5px;
+}
+
+.mobili img{
+  border: 1px solid #7D827B;
+  border-radius: 25px;
+
+}
+
+@media (min-width: 992px){
+
+.mobili img{
+  width: 50%;
+}
+
+}
+
+#imagen1
+{
+    margin-bottom: 25px;
+}
+
+/*Mobili 2 imagenes-------------------*/
+
+/*Tamaño para teléfono*/
+@media (max-width: 576px){
+
+#divlugar
+{
+  flex-direction: column;
+  align-items: center;
+}
+
+.linea3
+{
+  width: 490px;
+  height: 1px;
+  padding-bottom: 25px;
+}
+
+.mobili
+{
+  flex-direction: row;
+}
+
+.mobilo img{
+  width: 10%;
+}
+
+}

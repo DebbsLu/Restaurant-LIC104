@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Jaldi:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+body
+{
+    background-color: #65717D;
+    /*background-image: url("../img/aerial-wallpaper-in-birch-1040-mm-architextures.jpg");*/
+}
+
+#cuerponuevo
+{
+font-family: "Elsie Swash Caps", serif;
+background-color: #181818;
+/*background-image: url("../img/waves-black-4000-mm-architextures.jpg");*/
+background-image: url("../img/big-furada-midnight-4000-mm-architextures.jpg");
+background-size: contain;
+}
+
+/*letra de ubicación dude*/
+#ubicacion1
+{
+    color: #FFFFFF;
+    font-family: "Federo", sans-serif;
+    font-size: 15px;  
+}
+
+/*icono y texto ubicación*/
+.divtexto
+{
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.icono
+{
+  width: 24px;
+  height: 24px;
+}
+/*icono y texto ubicación*/
+
+#mobili
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(3, 4, 3, 0.7);
+}
+
+.mobiliimg{
+  width: 75%;
+  border: 1px solid #7D827B;
+  border-radius: 25px;
+
+}
+
+#imagen1
+{
+    margin-bottom: 25px;
+}
+
+#restaurantfachada{
+  margin-right: 0px;
+  width: 80%;
+}
+
+.linea3
+{
+  width: 1px;
+  height: 550px;
+  background-color: #7D827B;
+  margin-left: 50px;
+}
+
+/*ro cosas*/
+
+#rowlugar
+{
+  display: flex;
+  align-items: center;
+  border: 1px solid #7D827B;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgba(3, 4, 3, 0.5);
+}
