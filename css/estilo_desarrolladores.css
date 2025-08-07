@@ -1,0 +1,194 @@
+/*Contenedor para todos los elementos*/
+#contenedor-desarrolladores
+{
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin: 0 auto; /*Esto para centrar en la pantalla*/
+  margin-bottom: 100px; 
+}
+
+/*"Desarrolladores"*/
+#texto-desarrolladores
+{
+  z-index: 2;
+  margin-top: 12px;
+  font-size: 36px;
+  padding-top: 60px;
+  color: #FDD17A;
+}
+
+/*Semicírculo*/
+#semicirculo
+{
+  width: 100%;
+  height: 100%;
+  border-radius:  0 0 300px 300px; /*Necesario para la forma del semicírculo*/
+  background-color: #535452;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-image: url('../img/desarrolladores/Noise.png'); /*Efecto Noise*/
+}
+
+/*-------------Círculos con fotografías*/
+.dot 
+{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%); /* Centrar perfectamente */
+  z-index: 2;
+  background-color: rgba(217, 217, 217, 0.2);
+  backdrop-filter: blur(12px); /* efecto de desenfoque */
+}
+
+.dot-1
+{
+  left: 5%;
+  top: 30%;
+}
+
+.dot-2
+{
+  left: 20%;
+  top: 80%;
+}
+
+.dot-3
+{
+  left: 50%;
+  top: 100%;
+}
+
+.dot-4
+{
+  left: 80%;
+  top: 80%;
+}
+
+.dot-5
+{
+  left: 95%;
+  top: 30%;
+}
+/*Círculos con fotografías-------------*/
+
+/*-------------Rectángulos con datos*/
+.rec
+{
+  position: absolute;
+  width: 120px;
+  height: 46px;
+  background-color: skyblue;
+  border-radius: 14px;
+  transform: translate(-50%, -50%); /* Centrar perfectamente */
+  z-index: 2;
+  line-height: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(217, 217, 217, 0.2);
+  backdrop-filter: blur(5px); /* Efecto de desenfoque */
+
+}
+
+.rec-1
+{
+  left: 5%;
+  top: 53%
+}
+
+.rec-2
+{
+  left: 20%;
+  top: 103%
+}
+
+.rec-3
+{
+  left: 50%;
+  top: 123%
+}
+
+.rec-4
+{
+  left: 80%;
+  top: 103%
+}
+
+.rec-5
+{
+  left: 95%;
+  top: 53%
+}
+/*Rectángulos con datos-------------*/
+
+/*-------------Líneas decorativas*/
+.linea-decorativa {
+    position: absolute;
+    top: 0;  
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: none; 
+    z-index: 1;
+    background: transparent;
+}
+
+
+.linea-1 {
+    width: 564px;
+    height: 282px;
+    border-radius: 0 0 282px 282px;
+}
+
+.linea-2 {
+    width: 544px;
+    height: 272px;
+    border-radius: 0 0 272px 272px;  
+}
+
+.linea-3 {
+    width: 520px;
+    height: 260px;
+    border-radius: 0 0 260px 260px;  
+}
+
+.linea-4 {
+    width: 500px;
+    height: 250px;
+    border-radius: 0 0 250px 250px;  
+}
+
+.linea-5
+{
+  width: 464px;
+  height: 232px;
+  border-radius: 0 0 232px 232px;
+}
+
+.linea-6
+{
+  width: 448px;
+  height: 224px;
+  border-radius: 0 0 224px 224px;
+}
+
+.linea-7
+{
+  width: 428px;
+  height: 214px;
+  border-radius: 0 0 214px 214px;
+}
+
+.linea-8
+{
+  width: 412px;
+  height: 206px;
+  border-radius: 0 0 206px 206px;
+}
+/*Líneas decorativas-------------*/
