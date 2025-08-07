@@ -31,6 +31,16 @@
   background-image: url('../img/desarrolladores/Noise.png'); /*Efecto Noise*/
 }
 
+.rec span {
+      font-family: "Federo", sans-serif;
+      font-size: 15px;
+}
+
+.rec span:nth-of-type(2) {
+  margin-top: 5px;
+}
+
+
 /*-------------Círculos con fotografías*/
 .dot 
 {
