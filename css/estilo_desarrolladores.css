@@ -2,7 +2,7 @@
 #contenedor-desarrolladores
 {
   position: relative;
-  margin: 0 auto; /*Esto para centrar en la pantalla*/
+  
 }
 
 /*"Desarrolladores"*/
@@ -17,7 +17,6 @@
 {
   width: 100%;
   height: 100%;
-  border-radius:  0 0 300px 300px; /*Necesario para la forma del semicírculo*/
   background-color: #535452;
   position: relative;
   display: flex;
@@ -74,9 +73,169 @@
 /* Teléfonos */
 @media (max-width: 576px) 
 {
-  
+  /*Contenedor para todos los elementos*/
+  #contenedor-desarrolladores
+{
+  width: 200px;
+  height: 400px;
+  margin-bottom: 200px;
+  margin-left: 0 auto 200px 0;
 }
 
+/*"Desarrolladores"*/
+#texto-desarrolladores
+{
+  font-size: 24px;
+  padding-top: 180px;
+}
+
+/*Semicírculo*/
+#semicirculo
+{
+  border-radius:  0 400px 400px 0; /*Necesario para la forma del semicírculo*/
+}
+
+/*-------------Círculos con fotografías*/
+.dot 
+{
+  width: 54px;
+  height: 54px;
+}
+
+.dot-1
+{
+  left: 30%;
+  top: 5%;
+}
+
+.dot-2
+{
+  left: 80%;
+  top: 20%;
+}
+
+.dot-3
+{
+  left: 100%;
+  top: 50%;
+}
+
+.dot-4
+{
+  left: 80%;
+  top: 80%;
+}
+
+.dot-5
+{
+  left: 30%;
+  top: 95%;
+}
+/*Círculos con fotografías-------------*/
+
+/*-------------Rectángulos con datos*/
+.rec
+{
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.rec-1
+{
+  left: 66%;
+  top: 5%
+}
+
+.rec-2
+{
+  left: 116%;
+  top: 20%
+}
+
+.rec-3
+{
+  left: 136%;
+  top: 50%
+}
+
+.rec-4
+{
+  left: 80%;
+  top: 103%
+}
+
+.rec-5
+{
+  left: 95%;
+  top: 53%
+}
+
+.rec span 
+{
+  font-size: 10px;
+}
+
+.rec span:nth-of-type(2) 
+{
+  margin-top: 5px;
+}
+
+/*-------------Líneas decorativas*/
+.linea-1 {
+    width: 376px;
+    height: 188px;
+    border-radius: 0 0 188px 188px;
+}
+
+.linea-2 {
+    width: 362px;
+    height: 181px;
+    border-radius: 0 0 181px 181px;  
+}
+
+.linea-3 {
+    width: 346px;
+    height: 173px;
+    border-radius: 0 0 173px 173px;  
+}
+
+.linea-4 {
+    width: 332px;
+    height: 166px;
+    border-radius: 0 0 166px 166px;  
+}
+
+.linea-5
+{
+  width: 308px;
+  height: 154px;
+  border-radius: 0 0 154px 154px;
+}
+
+.linea-6
+{
+  width: 298px;
+  height: 149px;
+  border-radius: 0 0 149px 149px;
+}
+
+.linea-7
+{
+  width: 284px;
+  height: 142px;
+  border-radius: 0 0 142px 142px;
+}
+
+.linea-8
+{
+  width: 274px;
+  height: 137px;
+  border-radius: 0 0 137px 137px;
+}
+/*Líneas decorativas-------------*/
+  
+}
 
 /* Tablets */
 @media (min-width: 577px) and (max-width: 992px) 
@@ -86,7 +245,7 @@
 {
   width: 400px;
   height: 200px;
-  margin-bottom: 200px;
+  margin: 0 auto 100px; /*Esto para centrar en la pantalla*/
 }
 
 /*"Desarrolladores"*/
@@ -189,6 +348,13 @@
 }
 
 /*-------------Líneas decorativas*/
+.linea-decorativa 
+{
+    top: 0;  
+    left: 50%;
+    border-top: none; 
+}
+
 .linea-1 {
     width: 376px;
     height: 188px;
@@ -253,7 +419,7 @@
 {
   width: 600px;
   height: 300px;
-  margin-bottom: 100px;
+  margin: 0 auto 100px; /*Esto para centrar en la pantalla*/
 }
 
 /*"Desarrolladores"*/
@@ -357,6 +523,13 @@
 /*Rectángulos con datos-------------*/
 
 /*-------------Líneas decorativas*/
+.linea-decorativa 
+{
+    top: 0;  
+    left: 50%;
+    border-top: none; 
+}
+
 .linea-1 {
     width: 564px;
     height: 282px;
