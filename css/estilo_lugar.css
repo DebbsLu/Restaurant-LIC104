@@ -77,7 +77,7 @@
 
 #fachadaimg
 {
-    width: 85%;
+    width: 88%;
 }
 
 .fachadaicono
@@ -137,3 +137,101 @@
 }
 
 /*--------------------------Fotos del lugar*/
+
+/*------------------------------------------------------------Responsive*/
+
+/* Teléfonos */
+@media (max-width: 576px) 
+{
+#txtubi{
+    font-size: 10px;
+}
+
+    /*Fachadaicono*/
+  #contenlugar
+  {
+    flex-direction: column;
+  }
+
+.textico
+{
+    padding-top: 25px;
+}
+/*Fachadaicono*/
+
+/*linea divisoria*/
+.contenlinea{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#linea{
+    width: 80%;
+    height: 2px;
+    background-color: rgba(125, 130, 123, 0.5);
+}
+/*linea divisoria*/
+
+/*Fotos*/
+.contenfotos
+{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(3, 4, 3, 0.5);
+    padding: 2%;
+}
+
+.contenfotos img {
+    width: 130px; /*Tiene que ser px porque de él depende el tamaño del contendor, */
+    height: auto;
+    margin: 15px;
+}
+
+#imgizq{
+    
+}
+/*Fotos*/
+
+}
+
+/* Tablets */
+@media (min-width: 577px) and (max-width: 992px) 
+{
+  .textico
+{
+    display: flex;
+    border: 2px solid salmon;
+    align-items: center;
+    justify-content: center;
+}
+
+#txtubi{
+    font-size: 10px;
+}
+
+.fachadaicono{
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+ /*fotos*/   
+.contenfotos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenfotos img {
+    width: 105px; /*Tiene que ser px porque de él depende el tamaño del contendor, */
+    height: auto;
+    display: block;      /* Elimina espacios inline */
+    border: 1px solid #7D827B;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+
+
+}
