@@ -1,0 +1,139 @@
+
+
+/*----------------------------------LUGAR---------------------------*/
+
+/*sirve para que todo se centre sin romper nada :D*/
+.lugard
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#contenlugar
+{
+    display: flex;
+    border: 1px solid rgba(125, 130, 123, 0.5);
+    border-radius: 15px;
+    background-color: rgba(3, 4, 3, 0.7);
+    width: fit-content; /*ME AJUSTO AL CONTENEDOR DE LO QUE TENGO PTM*/
+    position: relative;
+    
+}
+
+/*------------------camara icon arriba*/
+.iconocamara {
+    position: absolute;
+    top: -25px; /* Subelo por encima del borde de #contenlugar */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Asegúrate que se muestre encima */
+}
+
+#iconocam
+{
+    position: absolute;
+    z-index: 1; 
+    top: 7px;
+}
+
+
+.circulobase {
+    position: absolute;
+    z-index: 0;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(3, 4, 3, 0.8);
+    border: 1px solid #7D827B;
+    border-radius: 50%;
+}
+/*-----------icono camara arroba*/
+
+
+
+/*---------------------imagen de fachada+ico*/
+.textico
+{
+    display: flex;
+    padding-left: 10%;
+}
+
+#txtubi
+{
+    color: #FFFFFF;
+    font-family: "Federo", sans-serif;
+    font-size: 15px;  
+}
+
+#icoubi
+{
+  width: 24px;
+  height: 24px;
+}
+
+#fachadaimg
+{
+    width: 85%;
+}
+
+.fachadaicono
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imagfachadacont
+{
+    display: flex;
+    justify-content: center;
+}
+
+/*---------------------imagen de fachada+ico*/
+
+
+
+
+/*---------------------linea divisoria*/
+.contenlinea
+{
+    display: flex;
+    align-items: stretch;
+    align-items: center;
+}
+
+#linea
+{
+    width: 2px;
+    height: 80%;
+    background-color: rgba(125, 130, 123, 0.5);
+}
+/*---------------------linea divisoria*/
+
+
+
+
+/*--------------------------Fotos del lugar*/
+.contenfotos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(3, 4, 3, 0.5);
+    padding: 2%;
+}
+
+.contenfotos img {
+    width: 200px; /*Tiene que ser px porque de él depende el tamaño del contendor, */
+    height: auto;
+    display: block;      /* Elimina espacios inline */
+    border: 1px solid #7D827B;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+/*--------------------------Fotos del lugar*/
