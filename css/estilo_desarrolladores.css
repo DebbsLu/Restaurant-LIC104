@@ -20,7 +20,6 @@
   background-color: #535452;
   position: relative;
   display: flex;
-  justify-content: center;
   background-image: url('../img/desarrolladores/Noise.png'); /*Efecto Noise*/
 }
 
@@ -61,11 +60,7 @@
 /*-------------Líneas decorativas*/
 .linea-decorativa {
     position: absolute;
-    top: 0;  
-    left: 50%;
-    transform: translateX(-50%);
     border: 2px solid rgba(255, 255, 255, 0.5);
-    border-top: none; 
     z-index: 1;
     background: transparent;
 }
@@ -85,14 +80,16 @@
 /*"Desarrolladores"*/
 #texto-desarrolladores
 {
-  font-size: 24px;
-  padding-top: 180px;
+  font-size: 16px;
+  padding-top: 185px;
+  padding-left: 10px;
 }
 
 /*Semicírculo*/
 #semicirculo
 {
   border-radius:  0 400px 400px 0; /*Necesario para la forma del semicírculo*/
+  justify-content: start;
 }
 
 /*-------------Círculos con fotografías*/
@@ -141,7 +138,7 @@
   border-radius: 10px;
 }
 
-.rec-1
+/*.rec-1
 {
   left: 66%;
   top: 5%
@@ -161,14 +158,44 @@
 
 .rec-4
 {
-  left: 80%;
-  top: 103%
+  left: 116%;
+  top: 80%
 }
 
 .rec-5
 {
-  left: 95%;
-  top: 53%
+  left: 66%;
+  top: 95%
+}*/
+
+.rec-1
+{
+  left: 30%;
+  top: 17%
+}
+
+.rec-2
+{
+  left: 80%;
+  top: 32%
+}
+
+.rec-3
+{
+  left: 100%;
+  top: 62%
+}
+
+.rec-4
+{
+  left: 80%;
+  top: 92%
+}
+
+.rec-5
+{
+  left: 30%;
+  top: 107%
 }
 
 .rec span 
@@ -182,56 +209,64 @@
 }
 
 /*-------------Líneas decorativas*/
+.linea-decorativa 
+{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    border-left: none; 
+}
+
 .linea-1 {
-    width: 376px;
-    height: 188px;
-    border-radius: 0 0 188px 188px;
+    width: 188px;
+    height: 376px;
+    border-radius: 0 376px 376px 0;
 }
 
 .linea-2 {
-    width: 362px;
-    height: 181px;
-    border-radius: 0 0 181px 181px;  
+    width: 181px;
+    height: 362px;
+    border-radius: 0 362px 362px 0;  
 }
 
 .linea-3 {
-    width: 346px;
-    height: 173px;
-    border-radius: 0 0 173px 173px;  
+    width: 173px;
+    height: 346px;
+    border-radius: 0 346px 346px 0;  
 }
 
 .linea-4 {
-    width: 332px;
-    height: 166px;
-    border-radius: 0 0 166px 166px;  
+    width: 166px;
+    height: 332px;
+    border-radius: 0 332px 332px 0;  
 }
 
 .linea-5
 {
-  width: 308px;
-  height: 154px;
-  border-radius: 0 0 154px 154px;
+  width: 154px;
+  height: 308px;
+  border-radius: 0 308px 308px 0;
 }
 
 .linea-6
 {
-  width: 298px;
-  height: 149px;
-  border-radius: 0 0 149px 149px;
+  width: 149px;
+  height: 298px;
+  border-radius: 0 298px 298px 0;
 }
 
 .linea-7
 {
-  width: 284px;
-  height: 142px;
-  border-radius: 0 0 142px 142px;
+  width: 142px;
+  height: 284px;
+  border-radius: 0 284px 284px 0;
 }
 
 .linea-8
 {
-  width: 274px;
-  height: 137px;
-  border-radius: 0 0 137px 137px;
+  width: 137px;
+  height: 274px;
+  border-radius: 0 274px 274px 0;
 }
 /*Líneas decorativas-------------*/
   
@@ -259,6 +294,7 @@
 #semicirculo
 {
   border-radius:  0 0 200px 200px; /*Necesario para la forma del semicírculo*/
+  justify-content: center;
 }
 
 /*-------------Círculos con fotografías*/
@@ -352,6 +388,7 @@
 {
     top: 0;  
     left: 50%;
+    transform: translateX(-50%);
     border-top: none; 
 }
 
@@ -433,6 +470,7 @@
 #semicirculo
 {
   border-radius:  0 0 300px 300px; /*Necesario para la forma del semicírculo*/
+  justify-content: center;
 }
 
 /*-------------Círculos con fotografías*/
@@ -527,6 +565,7 @@
 {
     top: 0;  
     left: 50%;
+    transform: translateX(-50%);
     border-top: none; 
 }
 
