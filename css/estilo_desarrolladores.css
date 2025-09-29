@@ -66,7 +66,7 @@
 }
 
 /* Teléfonos */
-@media (max-width: 576px) 
+@media (max-width: 359px) 
 {
   /*Contenedor para todos los elementos*/
   #contenedor-desarrolladores
@@ -267,6 +267,183 @@
   width: 137px;
   height: 274px;
   border-radius: 0 274px 274px 0;
+}
+/*Líneas decorativas-------------*/
+  
+}
+
+/* Teléfonos 2*/
+@media (min-width: 360px) and (max-width: 576px) 
+{
+  /*Contenedor para todos los elementos*/
+  #contenedor-desarrolladores
+{
+  width: 300px;
+  height: 600px;
+  margin-bottom: 200px;
+  margin-left: 0 auto 200px 0;
+}
+
+/*"Desarrolladores"*/
+#texto-desarrolladores
+{
+  font-size: 24px;
+  padding-top: 280px;
+  padding-left: 10px;
+}
+
+/*Semicírculo*/
+#semicirculo
+{
+  border-radius:  0 600px 600px 0; /*Necesario para la forma del semicírculo*/
+  justify-content: start;
+}
+
+/*-------------Círculos con fotografías*/
+.dot 
+{
+  width: 80px;
+  height: 80px;
+}
+
+.dot-1
+{
+  left: 30%;
+  top: 5%;
+}
+
+.dot-2
+{
+  left: 80%;
+  top: 20%;
+}
+
+.dot-3
+{
+  left: 100%;
+  top: 50%;
+}
+
+.dot-4
+{
+  left: 80%;
+  top: 80%;
+}
+
+.dot-5
+{
+  left: 30%;
+  top: 95%;
+}
+/*Círculos con fotografías-------------*/
+
+/*-------------Rectángulos con datos*/
+.rec
+{
+  width: 120px;
+  height: 46px;
+  border-radius: 14px;
+}
+
+.rec-1
+{
+  left: 30%;
+  top: 17%
+}
+
+.rec-2
+{
+  left: 80%;
+  top: 32%
+}
+
+.rec-3
+{
+  left: 100%;
+  top: 62%
+}
+
+.rec-4
+{
+  left: 80%;
+  top: 92%
+}
+
+.rec-5
+{
+  left: 30%;
+  top: 107%
+}
+
+.rec span 
+{
+  font-size: 15px;
+}
+
+.rec span:nth-of-type(2) 
+{
+  margin-top: 5px;
+}
+
+/*-------------Líneas decorativas*/
+.linea-decorativa 
+{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    border-left: none; 
+}
+
+.linea-1 {
+    width: 282px;
+    height: 564px;
+    border-radius: 0 282px 282px 0;
+}
+
+.linea-2 {
+    width: 272px;
+    height: 544px;
+    border-radius: 0 272px 272px 0;  
+}
+
+.linea-3 {
+    width: 260px;
+    height: 520px;
+    border-radius: 0 260px 260px 0;  
+}
+
+.linea-4 {
+    width: 250px;
+    height: 500px;
+    border-radius: 0 250px 250px 0;  
+}
+
+.linea-5
+{
+  width: 232px;
+  height: 464px;
+  border-radius: 0 232px 232px 0;
+}
+
+.linea-6
+{
+  width: 224px;
+  height: 448px;
+  border-radius: 0 224px 224px 0;
+}
+
+.linea-7
+{
+  width: 214px;
+  height: 428px;
+  border-radius: 0 214px 214px 0;
+}
+
+.linea-8
+{
+  width: 206px;
+  height: 412px;
+  border-radius: 0 206px 206px 0;
 }
 /*Líneas decorativas-------------*/
   
@@ -563,34 +740,34 @@
 /*-------------Líneas decorativas*/
 .linea-decorativa 
 {
-    top: 0;  
-    left: 50%;
-    transform: translateX(-50%);
-    border-top: none; 
+  top: 0;  
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: none; 
 }
 
 .linea-1 {
-    width: 564px;
-    height: 282px;
-    border-radius: 0 0 282px 282px;
+  width: 564px;
+  height: 282px;
+  border-radius: 0 0 282px 282px;
 }
 
 .linea-2 {
-    width: 544px;
-    height: 272px;
-    border-radius: 0 0 272px 272px;  
+  width: 544px;
+  height: 272px;
+  border-radius: 0 0 272px 272px;  
 }
 
 .linea-3 {
-    width: 520px;
-    height: 260px;
-    border-radius: 0 0 260px 260px;  
+  width: 520px;
+  height: 260px;
+  border-radius: 0 0 260px 260px;  
 }
 
 .linea-4 {
-    width: 500px;
-    height: 250px;
-    border-radius: 0 0 250px 250px;  
+  width: 500px;
+  height: 250px;
+  border-radius: 0 0 250px 250px;  
 }
 
 .linea-5
