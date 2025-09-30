@@ -17,11 +17,11 @@
 
 
 .tarjeta {
-    width: 300px;
+    width: 380px;
     padding: 1rem;
     border-radius: 10px;
     box-sizing: border-box;
-    color: white;
+    color: #7D827B;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -30,8 +30,7 @@
 }
 
 .tarjeta p {
-    margin: 0.5rem 0;
-    font-size: 1rem;
+    font-size: 20px;
 }
 
 .numeroCarta {
@@ -39,20 +38,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
 }
 
 .lineaMedia {
     flex-grow: 1;
     height: 1px;
-    background-color: white;
+    background-color: #7D827B;
 }
 .lineaBaja
 {
     width: auto;
     height: 1;
     margin-top: 2rem;
-    border: 1px dotted white;
+    border: 1px dotted #7D827B;
 }
 .horario p
 {
