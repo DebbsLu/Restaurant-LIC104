@@ -91,7 +91,7 @@ body {
 
 /* Botón */
 .btn-enviar {
-  background: url("../img/lugar/fondo-boton.jpg") no-repeat center center;
+  background: url("../img/lugar/fondo-boton.jpg") no-repeat center center;  /*Aqui falta el fondo del boton no se como*/
   background-size: cover;
   color: #fff;
   border: none;
