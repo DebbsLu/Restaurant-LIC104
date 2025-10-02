@@ -1,202 +1,152 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: url("../img/body/fondo.jpg") no-repeat center center fixed;
+  padding: 0;
+  font-family: 'Jaldi', sans-serif;
+  background: url('fondo.jpg') no-repeat center center fixed;
   background-size: cover;
-}
-
-.contactanos-section {
-  background: url("../img/body/fondo.jpg") no-repeat center center fixed;
-  background-size: cover;
-  padding: 3rem 1rem;
-  color: #f5f5f5;
-  text-align: center;
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Título */
-.titulo-contactanos {
-  font-family: "Elsie Swash Caps", serif;
-  font-size: 2.5rem;
-  color: #f8d36f;
-  margin-bottom: 2rem;
+.titulo {
+  text-align: center;
+  font-family: 'Elsie Swash Caps', cursive;
+  font-size: 48px;
+  color: #FDD17A;
+  margin-top: 40px;
 }
 
-/* Contenedor del icono */
-.icono-contacto {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: #2c2c2c;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 4px solid #fff; /* borde blanco */
-  margin-bottom: -40px; /* se sobrepone al formulario */
-  z-index: 2;
-  position: relative;
-}
-
-.icono-contacto img {
-  width: 40px;
-  height: 40px;
-}
-
-/* Caja del formulario */
-.formulario-contacto {
-  background: rgba(34, 34, 34, 0.85);
+/* Contenedor del formulario */
+.form-container {
+  background: rgba(52, 57, 51, 0.9); /* #343933 con alpha 90% */
+  border: 1px solid #7D827B;
   border-radius: 15px;
-  max-width: 500px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 2.5rem 2rem 2rem;
+  width: 600px;
+  margin: 40px auto;
+  padding: 54px 106px;
   position: relative;
-  z-index: 1;
+  box-sizing: border-box;
 }
 
-/* Etiquetas */
-.formulario-contacto label {
-  display: block;
-  text-align: left;
-  margin-bottom: 5px;
-  font-family: "Elsie Swash Caps", serif;
-  font-size: 1.1rem;
+/* Icono en círculo */
+.icono-circulo {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #343933; /* Relleno sólido */
+  border: 2px solid #7D827B;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Inputs y textarea */
-.formulario-contacto input,
-.formulario-contacto textarea {
-  width: 100%;
+.icono-circulo img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Campos alineados en fila */
+.campo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.campo label {
+  width: 120px; /* ancho fijo para alinear */
+  font-family: 'Elsie Swash Caps', cursive;
+  color: #A5A7A4;
+  font-size: 18px;
+}
+
+.campo input {
+  flex: 1;
   padding: 10px;
   border: none;
-  border-radius: 6px;
-  background: #d9d9d9;
-  font-family: "Jaldi", sans-serif;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  background-color: #A5A7A4;
+  border-radius: 5px;
+  font-family: 'Jaldi', sans-serif;
+  font-size: 16px;
 }
 
-/* Placeholder con Jaldi */
-.formulario-contacto input::placeholder,
-.formulario-contacto textarea::placeholder {
-  color: #555;
-  font-style: italic;
-  font-family: "Jaldi", sans-serif;
+/* Campo de mensaje */
+.campo-mensaje {
+  margin-top: 20px;
+}
+
+.campo-mensaje label {
+  display: block;
+  font-family: 'Elsie Swash Caps', cursive;
+  color: #A5A7A4;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.campo-mensaje textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  border: none;
+  background-color: #A5A7A4;
+  border-radius: 5px;
+  font-family: 'Jaldi', sans-serif;
+  font-size: 16px;
+  resize: none;
 }
 
 /* Botón */
-.btn-enviar {
-  background: url("../img/lugar/fondo-boton.jpg") no-repeat center center;  /*Aqui falta el fondo del boton no se como*/
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgba(125, 130, 123, 0.5);
+  border-radius: 10px;
+  background: url('fondo.jpg') no-repeat center center;
   background-size: cover;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  font-family: "Federo", sans-serif;
-  font-size: 1rem;
+  color: #FFFFFF;
+  font-family: 'Federo', sans-serif;
+  font-size: 18px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.btn-enviar:hover {
-  transform: scale(1.05);
-  background-color: #444;
-}
-
-/* ==================== RESPONSIVE ==================== */
+/* RESPONSIVE */
 
 /* Teléfonos */
 @media (max-width: 576px) {
-  .titulo-contactanos {
-    font-size: 1.8rem;
+  .form-container {
+    width: 90%;
+    padding: 30px 20px;
   }
-
-  .icono-contacto {
-    width: 60px;
-    height: 60px;
-    margin-bottom: -28px;
+  .titulo {
+    font-size: 32px;
   }
-
-  .icono-contacto img {
-    width: 28px;
-    height: 28px;
+  .campo {
+    flex-direction: column;
+    align-items: flex-start;
   }
-
-  .formulario-contacto {
-    padding: 1.5rem;
-    max-width: 95%;
-    border-radius: 12px;
-  }
-
-  .formulario-contacto label {
-    font-size: 1rem;
-  }
-
-  .formulario-contacto input,
-  .formulario-contacto textarea {
-    font-size: 0.95rem;
-    padding: 8px;
-  }
-
-  .btn-enviar {
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
+  .campo label {
+    margin-bottom: 5px;
   }
 }
 
 /* Tablets */
 @media (min-width: 577px) and (max-width: 992px) {
-  .titulo-contactanos {
-    font-size: 2.2rem;
-  }
-
-  .icono-contacto {
-    width: 70px;
-    height: 70px;
-  }
-
-  .icono-contacto img {
-    width: 35px;
-    height: 35px;
-  }
-
-  .formulario-contacto {
-    max-width: 80%;
-  }
-
-  .btn-enviar {
+  .form-container {
     width: 80%;
+    padding: 40px 50px;
+  }
+  .titulo {
+    font-size: 40px;
   }
 }
 
 /* Escritorio */
 @media (min-width: 993px) {
-  .titulo-contactanos {
-    font-size: 2.5rem;
-  }
-
-  .icono-contacto {
-    width: 80px;
-    height: 80px;
-  }
-
-  .icono-contacto img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .formulario-contacto {
-    max-width: 500px;
-  }
-
-  .btn-enviar {
-    width: auto;
-    padding: 10px 20px;
+  .form-container {
+    width: 600px;
+    padding: 54px 106px;
   }
 }
