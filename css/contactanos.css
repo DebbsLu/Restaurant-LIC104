@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Jaldi', sans-serif;
-  background: url('fondo.jpg') no-repeat center center fixed;
+  background: url('fondo.jpg') no-repeat center center fixed; /*No se esto como*/
   background-size: cover;
 }
 
