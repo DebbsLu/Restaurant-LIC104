@@ -57,6 +57,7 @@ body {
 
 .campo label {
   width: 120px; /* ancho fijo para alinear */
+  margin-right: 4px;
   font-family: 'Elsie Swash Caps', cursive;
   color: #A5A7A4;
   font-size: 18px;
