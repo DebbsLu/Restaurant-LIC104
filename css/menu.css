@@ -83,3 +83,15 @@ a:active {
   }
 
 }
+
+/*Decoracion de los containers del menu*/
+.menu-container {
+  border-radius: 15px;
+  border: 0.5px solid #6E6E6D;
+  background: rgba(3, 4, 2, 0.3); /* fondo blanco translúcido */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  backdrop-filter: blur(8px); /* efecto difuminado */
+  -webkit-backdrop-filter: blur(8px);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
