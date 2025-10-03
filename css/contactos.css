@@ -135,7 +135,6 @@ margin-top: 5px;
         flex-direction: column;
         align-items: center;
         gap: 5px !important;
-        margin-left: 0;
         justify-content: center;
     }
 
@@ -158,8 +157,10 @@ margin-top: 5px;
     .instagram, .facebook
     {
         align-self: center;
-        font-size: 10px;
+        font-size: 12px;
+        justify-content: center;
     }
+
     
     .instagram, .facebook, .tarjeta
     {
@@ -190,12 +191,11 @@ margin-top: 5px;
 
 }
 
-/* Tablets */
-@media (min-width: 577px) and (max-width: 992px) 
-{
+/* Tablets solo hasta 768px (modo vertical) */
+@media (min-width: 577px) and (max-width: 768px) {
+
 
     .contactosContainerW{
-            border: 5px solid salmon;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -203,7 +203,7 @@ margin-top: 5px;
     }
 
     .contactosW{
-            border: 3px solid snow;
+            
             width: 90%;
     }
 
@@ -227,7 +227,7 @@ margin-top: 5px;
         align-items: end;
         justify-content: center;
         font-size: 13 px;
-        border: 2px solid skyblue;
+        
 
     }
 
