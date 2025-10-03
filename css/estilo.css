@@ -3,7 +3,6 @@
 body
 {
     background-color: #65717D;
-    /*background-image: url("../img/aerial-wallpaper-in-birch-1040-mm-architextures.jpg");*/
 }
 
 #cuerponuevo
@@ -14,5 +13,14 @@ background-color: #181818;
 background-image: url("../img/body/big-furada-midnight-4000-mm-architextures2.jpg");
 background-size: contain;
 background-attachment: fixed;
+max-width: 1200px;   /* ancho máximo en desktop */
+margin: auto; 
 }
 
+/* Móvil */
+@media (max-width: 768px) {
+  #cuerponuevo {
+    max-width: 100%;  /* ocupa todo el ancho */
+    justify-content: center;
+  }
+}

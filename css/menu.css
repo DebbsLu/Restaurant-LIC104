@@ -5,7 +5,7 @@ ul{
   border-radius: 25px;
  width: fit-content;
  /* 6E6E6D rgba(3, 4, 2, 0.3);*/
-  background-color: rgba(3, 4, 2, 0.3);
+  background-color: rgba(3, 4, 2, 0.6         );
   padding: 3px 7px 3px 7px;
   gap: 50px;
 }
@@ -82,4 +82,11 @@ a:active {
     display: none; /* oculta las líneas divisorias en móvil */
   }
 
+#menu span{
+    font-size: 10px;
+  }
+
 }
+
+
+
