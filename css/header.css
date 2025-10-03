@@ -48,13 +48,6 @@ header h2{
     margin-left: 47%;
 }
 
-#planta{
-    position: absolute;
-    z-index: 0;
-    width: 200px;
-    margin-left: 15px;
-    top: 245px;
-}
 
     .linea-circulo {
       display: flex;
