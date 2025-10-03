@@ -13,4 +13,28 @@ background-color: #181818;
 /*background-image: url("../img/waves-black-4000-mm-architextures.jpg");*/
 background-image: url("../img/body/big-furada-midnight-4000-mm-architextures2.jpg");
 background-size: contain;
+margin-top: 15px;
+padding: 15px;
+}
+
+.titulos{
+    color: #FDD17A;
+    text-align: center;
+}
+
+
+/* Teléfonos */
+@media (max-width: 576px) 
+{
+ #cuerponuevo{
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 5px;
+} 
+}
+
+/* Tablets */
+@media (min-width: 577px) and (max-width: 992px) 
+{
+  
 }

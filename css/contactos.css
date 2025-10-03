@@ -1,14 +1,12 @@
 
-
 .contactosContainerW {
     font-family: "Elsie Swash Caps", serif;
-    /*display: flex;    */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    justify-content: center;
-    max-width: 1200px;
-    /*border: 15px solid salmon;*/
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contactosW {
@@ -25,8 +23,7 @@
     border-radius: 10px;
     color: #7D827B;
     backdrop-filter: blur(20px);
-    background-color: rgba(45, 45, 45, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(14, 14, 14, 0.5);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
@@ -42,14 +39,8 @@
 }
 
 .tarjeta p {
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 0;
-}
-
-
-.title{
-    margin-bottom: 0;
-    font-size: 18px;
 }
 
 .numeroCarta {
@@ -123,57 +114,17 @@ margin-top: 5px;
 }
 
 
-/*-----------------------------------------*/
-/* Teléfonos */
-@media (max-width: 576px) {
-    .contactosContainerW {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .contactosW {
-        width: 100%;
-        align-items: center;
-    }
 
-    .tarjetasAlign {
-        flex-direction: column;
-    }
 
-    .instagram,
-    .facebook {
-        align-self: center;
-    }
-}
-
-/* Tablets */
-@media (min-width: 577px) and (max-width: 992px) {
-    .contactosContainerW {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contactosW {
-        width: 80%; /* un poco más angosto que teléfono, pero centrado */
-        align-items: center;
-    }
-
-    .tarjetasAlign {
-        flex-direction: column;
-    }
-
-    .instagram,
-    .facebook {
-        align-self: center;
-    }
-}
-
-/*
-/* Responsive 
 @media (max-width: 768px) {
     .contactosContainerW {
         flex-direction: column;
         align-items: center;
+    }
+
+    .tarjeta{
+        background-color: rgba(20, 20, 20, 0.2);
     }
 
     .contactosW {
@@ -187,9 +138,32 @@ margin-top: 5px;
     .instagram, .facebook
     {
         align-self: center;
+        font-size: 10px;
     }
+    
+    .tarjeta p {
+    font-size: 12px;
+ }
+
+
+.instagram img,
+.facebook img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
-*/
+
+
+.contactosContainerW {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+
 
 
 

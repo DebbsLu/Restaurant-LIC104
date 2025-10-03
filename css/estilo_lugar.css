@@ -19,7 +19,6 @@
     background-color: rgba(3, 4, 3, 0.7);
     width: fit-content; /*ME AJUSTO AL CONTENEDOR DE LO QUE TENGO PTM*/
     position: relative;
-    
 }
 
 /*------------------camara icon arriba*/
@@ -183,15 +182,13 @@
 }
 
 .contenfotos img {
-    width: 130px; /*Tiene que ser px porque de él depende el tamaño del contendor, */
+    width: 150px; /*Tiene que ser px porque de él depende el tamaño del contendor, */
     height: auto;
     margin: 15px;
 }
-
-
 /*Fotos*/
-
 }
+
 
 /* Tablets */
 @media (min-width: 577px) and (max-width: 992px) 
@@ -199,7 +196,6 @@
   .textico
 {
     display: flex;
-    border: 2px solid salmon;
     align-items: center;
     justify-content: center;
 }
