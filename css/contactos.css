@@ -1,4 +1,14 @@
 
+/* Título */
+.titulos {
+  text-align: center;
+  font-family: 'Elsie Swash Caps', cursive;
+  font-size: 48px;
+  color: #FDD17A;
+  margin-top: 40px;
+}
+
+
 .contactosContainerW {
     font-family: "Elsie Swash Caps", serif;
     display: grid;

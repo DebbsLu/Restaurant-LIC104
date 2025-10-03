@@ -17,12 +17,6 @@ margin-top: 15px;
 padding: 15px;
 }
 
-.titulos{
-    color: #FDD17A;
-    text-align: center;
-}
-
-
 /* Teléfonos */
 @media (max-width: 576px) 
 {
