@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+.formulario-reserva {
+  font-family: "Federo", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Texto de indicación arriba de los inputs largos */
+.indicacion {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Contenedor general del label + input */
+.grupo-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #D9D9D9;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Label integrado a la izquierda */
+.etiqueta {
+  background-color: #D9D9D9;
+  color: #765437;
+  padding: 10px 20px;
+  border-radius: 25px 0 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  white-space: nowrap;
+  height: 100%;
+}
+
+/* Input con fondo transparente */
+.grupo-input input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-left: 1px solid #D9D9D9;
+  border-radius: 0 25px 25px 0;
+  outline: none;
+  font-size: 16px;
+}
+
+.grupo-input input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Inputs pequeños (fecha y hora) */
+.campo-pequeño {
+  max-width: 300px;
+  margin-left: 50px;
+}
+
+/* Efecto visual cuando el input tiene foco */
+.grupo-input input:focus {
+  box-shadow: 0 0 5px #FDD17A;
+  border-color: #FDD17A;
+}
+
+/* Ajuste de responsividad */
+@media (max-width: 600px) {
+  .grupo-input {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .etiqueta {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .grupo-input input {
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    border-left: none;
+    border-top: 1px solid #D9D9D9;
+  }
+
+  .campo-pequeño {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
