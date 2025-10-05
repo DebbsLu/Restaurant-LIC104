@@ -1,0 +1,67 @@
+/*Contenedor para todos los elementos*/
+#contenedor-desarrolladores {
+  position: relative;
+  margin-top: 40px;
+  width: 100%; /* base flexible */
+  height: auto; /* que crezca según contenido o JS */
+  max-width: 100%;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+/*"Desarrolladores"*/
+#texto-desarrolladores {
+  z-index: 2;
+  color: #FDD17A;
+  font-family: 'Elsie Swash Caps', cursive;
+  position: absolute;
+}
+
+/*Semicírculo*/
+#semicirculo {
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 57, 51, 0.5); 
+  backdrop-filter: blur(80px);
+  position: relative;
+  display: flex;
+  background-image: url('../img/desarrolladores/Noise.png'); 
+  border-radius: 0; /* Será ajustado por JS */
+}
+
+/*-------------Círculos con fotografías*/
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: rgba(217, 217, 217, 0.2);
+  backdrop-filter: blur(12px); 
+}
+
+/*-------------Rectángulos con datos*/
+.rec {
+  position: absolute;
+  background-color: rgba(217, 217, 217, 0.2);
+  backdrop-filter: blur(5px);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  line-height: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.rec span {
+  font-family: "Federo", sans-serif;
+}
+
+/*-------------Líneas decorativas*/
+.linea-decorativa {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  background: transparent;
+}

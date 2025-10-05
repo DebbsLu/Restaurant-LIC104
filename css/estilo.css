@@ -3,6 +3,11 @@
 body
 {
     background-color: #65717D;
+<<<<<<< HEAD
+=======
+    /*background-color: #030403;*/
+    /*background-image: url("../img/aerial-wallpaper-in-birch-1040-mm-architextures.jpg");*/
+>>>>>>> Luna
 }
 
 #cuerponuevo
@@ -12,6 +17,7 @@ background-color: #181818;
 /*background-image: url("../img/waves-black-4000-mm-architextures.jpg");*/
 background-image: url("../img/body/big-furada-midnight-4000-mm-architextures2.jpg");
 background-size: contain;
+<<<<<<< HEAD
 background-attachment: fixed;
 max-width: 1200px;   /* ancho máximo en desktop */
 margin: auto; 
@@ -23,4 +29,28 @@ margin: auto;
     max-width: 100%;  /* ocupa todo el ancho */
     justify-content: center;
   }
+=======
+margin-top: 15px;
+padding: 15px;
+ width: 95vw;          /* ocupa el 95% del ancho de la ventana */
+  max-width: 95%;       /* alternativa de seguridad */
+}
+
+/* Teléfonos */
+@media (max-width: 576px) 
+{
+ #cuerponuevo{
+margin: 0;
+    padding: 5px;
+      width: 100%;        /* ocupa todo en teléfonos */
+      max-width: 100%;
+    box-sizing: border-box;  /* mantiene el contenido dentro sin desbordar ESTO SOLUCIONO LO DE LOS BORDES DE BODY EN TEL */
+} 
+}
+
+/* Tablets */
+@media (min-width: 577px) and (max-width: 992px) 
+{
+  
+>>>>>>> Luna
 }

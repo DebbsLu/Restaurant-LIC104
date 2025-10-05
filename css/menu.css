@@ -68,14 +68,14 @@ a:active {
     flex-direction: row;
     align-items: start;
     gap: 5px;
-    padding: 10px;
+    padding: 5px;
     border: 0;
   }
 
   a{
-      border: 1px solid #6E6E6D;
-  border-radius: 25px;
-  padding: 1px 7px 1px 7px;
+    border: 1px solid #6E6E6D;
+    border-radius: 25px;
+    padding: 1px 7px 1px 7px;
   }
 
   .linea2 {
@@ -86,7 +86,17 @@ a:active {
     font-size: 10px;
   }
 
+<<<<<<< HEAD
 }
 
 
 
+=======
+  a img{
+    width: 15px;
+    height: 15px;
+  }
+}
+
+
+>>>>>>> Luna

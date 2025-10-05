@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 
 .contactosContainerW {
     font-family: "Elsie Swash Caps", serif;
@@ -9,6 +10,26 @@
     justify-content: center;
     max-width: 1200px;
     /*border: 15px solid salmon;*/
+=======
+/* Título */
+.titulos {
+  text-align: center;
+  font-family: 'Elsie Swash Caps', cursive;
+  font-size: 48px;
+  color: #FDD17A;
+  margin-top: 40px;
+}
+
+
+.contactosContainerW {
+    font-family: "Elsie Swash Caps", serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+>>>>>>> Luna
 }
 
 .contactosW {
@@ -25,8 +46,12 @@
     border-radius: 10px;
     color: #7D827B;
     backdrop-filter: blur(20px);
+<<<<<<< HEAD
     background-color: rgba(45, 45, 45, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.1);
+=======
+    background-color: rgba(14, 14, 14, 0.5);
+>>>>>>> Luna
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
@@ -42,6 +67,7 @@
 }
 
 .tarjeta p {
+<<<<<<< HEAD
     font-size: 15px;
     margin-bottom: 0;
 }
@@ -52,6 +78,12 @@
     font-size: 18px;
 }
 
+=======
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+>>>>>>> Luna
 .numeroCarta {
     font-family: "Federo", sans-serif;
     display: flex;
@@ -103,6 +135,11 @@ margin-top: 5px;
     align-self: flex-end;
     background-color: rgba(62, 66, 58, 0.4);
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> Luna
 .facebook
 {
     align-self: flex-start;
@@ -116,13 +153,18 @@ margin-top: 5px;
 }
 
 .instagram img,
+<<<<<<< HEAD
 .facebook img {
+=======
+.facebook img{
+>>>>>>> Luna
     width: 34px;
     height: 34px;
     object-fit: contain;
 }
 
 
+<<<<<<< HEAD
 /*-----------------------------------------*/
 /* Teléfonos */
 @media (max-width: 576px) {
@@ -174,22 +216,139 @@ margin-top: 5px;
     .contactosContainerW {
         flex-direction: column;
         align-items: center;
+=======
+
+/* Teléfonos */
+@media (max-width: 576px) 
+{
+
+    .contactosContainerW {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px !important;
+        justify-content: center;
+    }
+
+    .tarjeta{
+        background-color: rgba(20, 20, 20, 0.2);
+>>>>>>> Luna
     }
 
     .contactosW {
         width: 100%;
         align-items: center;
+<<<<<<< HEAD
     }
     .tarjetasAlign
     {
         flex-direction: column;
+=======
+        /*border: 3px solid seashell;*/
+    }
+    
+    .tarjetasAlign
+    {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+>>>>>>> Luna
     }
     .instagram, .facebook
     {
         align-self: center;
+<<<<<<< HEAD
     }
 }
 */
+=======
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    
+    .instagram, .facebook, .tarjeta
+    {
+         width: 100%;   /* todas ocupan lo mismo */
+    }
+
+    .tarjeta p {
+    font-size: 12px;
+    }
+
+
+.instagram img,
+.facebook img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+
+.contactosContainerW {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+}
+
+/* Tablets solo hasta 768px (modo vertical) */
+@media (min-width: 577px) and (max-width: 768px) {
+
+
+    .contactosContainerW{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+
+    .contactosW{
+            
+            width: 90%;
+    }
+
+
+    .tarjeta{
+        background-color: rgba(20, 20, 20, 0.2);
+    }
+
+    .tarjeta p {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+    .tarjetasAlign
+    {
+        flex-direction: row;
+    }
+
+    .instagram, .facebook
+    {
+        align-items: end;
+        justify-content: center;
+        font-size: 13 px;
+        
+
+    }
+
+
+.instagram img,
+.facebook img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+
+}
+
+
+
+>>>>>>> Luna
 
 
 
