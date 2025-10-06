@@ -1,4 +1,4 @@
-.mesasSP{
+.mesasSP2 {
     display: flex;
     gap: 50px;
     border: 1px solid #fff;
@@ -10,15 +10,14 @@
     padding-right: 30px;
 }
 
-
-.mesasp1 {
+.mesasp12 {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.mesa1 {
+.mesa12 {
   position: relative;
   display: flex;
   justify-content: center;
@@ -26,73 +25,66 @@
 }
 
 /* ---------- RECTÁNGULO CENTRAL ---------- */
-.rectanguloD {
+.rectanguloD2 {
   position: relative;
   background-color: #45413E;
   border-radius: 12px;
   width: 120px;
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* p izquierda, círculo derecha */
   align-items: center;
   flex-direction: row;
-  z-index: 2; /* debajo de los círculos y texto */
+  z-index: 2; 
   gap: 8px;
-   padding: 0 8px; /* espacio interno */
+  padding: 0 8px; 
 }
 
 /* Texto dentro del rectángulo */
-.rectanguloD p {
+.rectanguloD2 p {
   color: white;
   font-family: "Federo", sans-serif;
   font-size: 18px;
   position: relative;
-  z-index: 3; /* encima del rectángulo */
-  margin: 0; /* elimina margen por defecto */
+  z-index: 3; 
+  margin: 0; 
 }
 
 /* ---------- CÍRCULOS IZQUIERDO Y DERECHO (semicirculares debajo del rectángulo) ---------- */
-.circleDI,
-.circleDD {
+.circleDI2,
+.circleDD2 {
   position: absolute;
   width: 40px;
   height: 40px;
-  background-color: #030403;
+  background-color: #78736E;
   border-radius: 50%;
-  z-index: 1; /* debajo del rectángulo */
-   /*bottom: -10px; /* apenas sobresalen por debajo Esto hace que se pongan abajo */
-   
-
+  z-index: 1;
 }
 
 /* Izquierdo */
-.circleDI {
+.circleDI2 {
   left: -20px;
-  /*bottom: -20px;*/
 }
 
 /* Derecho */
-.circleDD {
+.circleDD2 {
   right: -20px;
-  /*bottom: -20px;*/
 }
 
 /* ---------- CÍRCULO FONDO Y CÍRCULO INTERIOR ---------- */
-.circleFondo {
-  
+.circleFondo2 {
   width: 24px;
   height: 24px;
   background-color: #788775;
   border-radius: 50%;
-  z-index: 3; /* encima del rectángulo */
+  z-index: 3; 
   display: flex;
   justify-content: center;
   align-items: center;
-  /*bottom: -20px;*/
 }
 
 /* Círculo interior con borde */
-.circleDentroBorde {
+.circleDentroBorde2 {
   width: 16px;
   height: 16px;
   background-color: #788775;
