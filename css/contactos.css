@@ -7,7 +7,10 @@
   color: #FDD17A;
   margin-top: 40px;
 }
-
+html
+{
+    scroll-behavior: smooth;
+}
 
 .contactosContainerW {
     font-family: "Elsie Swash Caps", serif;
@@ -130,7 +133,10 @@ margin-top: 5px;
 /* Teléfonos */
 @media (max-width: 576px) 
 {
-
+    html
+    {
+        scroll-behavior: unset;
+    }
     .contactosContainerW {
         flex-direction: column;
         align-items: center;
@@ -187,14 +193,21 @@ margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
 }
-
+.desaparecerMenus
+    {
+        display: none;
+    }
 
 }
+
 
 /* Tablets solo hasta 768px (modo vertical) */
 @media (min-width: 577px) and (max-width: 768px) {
 
-
+    html
+    {
+        scroll-behavior: unset;
+    }
     .contactosContainerW{
             display: flex;
             flex-direction: column;
@@ -215,7 +228,7 @@ margin-top: 5px;
     .tarjeta p {
     font-size: 13px;
     margin-bottom: 0;
-}
+    }
 
     .tarjetasAlign
     {
@@ -232,15 +245,36 @@ margin-top: 5px;
     }
 
 
-.instagram img,
-.facebook img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-}
+    .instagram img,
+    .facebook img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+    .desaparecerMenus
+    {
+        display: none;
+    }
 
 
 }
+
+.desaparecerMenus {
+    opacity: 1;
+    max-height: 2000px;
+    transition: opacity 0.4s, max-height 0.4s;
+    overflow: hidden;
+    display: block;
+}
+
+.desaparecerMenus.oculto {
+    opacity: 0;
+    max-height: 0;
+    pointer-events: none;
+    transition: opacity 0.4s, max-height 0.4s;
+}
+
+
 
 
 
