@@ -1,5 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
 
+.contenedorformD{
+  border-radius: 25px;
+  background: rgba(165, 167, 164, 0.2); /* #343933 con alpha 90% */
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(165, 167, 164, 0.2);
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+.contenedorformD h1{
+      color: #FDD17A;
+    font-size: 120px;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 110px;
+    margin-top: 25px;
+}
+
+.contenedorformD h2{
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formhr{
+  background-color: #A5A7A4;
+  height: 2px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
 .formulario-reserva {
   font-family: "Federo", sans-serif;
   color: white;
@@ -7,7 +40,9 @@
   flex-direction: column;
   gap: 25px;
   margin-top: 30px;
+  margin-left: 5%;
 }
+
 
 /* Texto de indicación arriba de los inputs largos */
 .indicacion {
@@ -36,8 +71,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: normal;
-  white-space: nowrap;
   height: 100%;
 }
 
@@ -66,8 +99,8 @@
 
 /* Efecto visual cuando el input tiene foco */
 .grupo-input input:focus {
-  box-shadow: 0 0 5px #FDD17A;
-  border-color: #FDD17A;
+  box-shadow: 0 0 5px #765437;
+  border-color: #765437;
 }
 
 /* Ajuste de responsividad */
@@ -93,4 +126,17 @@
     max-width: 100%;
     margin-left: 0;
   }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* invierte los colores */
+}
+
+#hora{
+  text-align: center;
+}
+
+#fecha{
+  text-align: center;
 }

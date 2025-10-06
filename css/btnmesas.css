@@ -1,0 +1,101 @@
+.mesasPP{
+    display: flex;
+    gap: 50px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.mesasp1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mesa1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- RECTÁNGULO CENTRAL ---------- */
+.rectanguloD {
+  position: relative;
+  background-color: #45413E;
+  border-radius: 12px;
+  width: 120px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  z-index: 2; /* debajo de los círculos y texto */
+  gap: 8px;
+   padding: 0 8px; /* espacio interno */
+}
+
+/* Texto dentro del rectángulo */
+.rectanguloD p {
+  color: white;
+  font-family: "Federo", sans-serif;
+  font-size: 18px;
+  position: relative;
+  z-index: 3; /* encima del rectángulo */
+  margin: 0; /* elimina margen por defecto */
+}
+
+/* ---------- CÍRCULOS IZQUIERDO Y DERECHO (semicirculares debajo del rectángulo) ---------- */
+.circleDI,
+.circleDD {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #030403;
+  border-radius: 50%;
+  z-index: 1; /* debajo del rectángulo */
+   /*bottom: -10px; /* apenas sobresalen por debajo Esto hace que se pongan abajo */
+   
+
+}
+
+/* Izquierdo */
+.circleDI {
+  left: -20px;
+  /*bottom: -20px;*/
+}
+
+/* Derecho */
+.circleDD {
+  right: -20px;
+  /*bottom: -20px;*/
+}
+
+/* ---------- CÍRCULO FONDO Y CÍRCULO INTERIOR ---------- */
+.circleFondo {
+  
+  width: 24px;
+  height: 24px;
+  background-color: #788775;
+  border-radius: 50%;
+  z-index: 3; /* encima del rectángulo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*bottom: -20px;*/
+}
+
+/* Círculo interior con borde */
+.circleDentroBorde {
+  width: 16px;
+  height: 16px;
+  background-color: #788775;
+  border: 1px solid #D9D9D9;
+  border-radius: 50%;
+  z-index: 4;
+}
