@@ -263,7 +263,7 @@ margin-top: 5px;
     opacity: 1;
     max-height: 2000px;
     transition: opacity 0.4s, max-height 0.4s;
-    overflow: hidden;
+    overflow: visible;
     display: block;
 }
 
