@@ -100,14 +100,14 @@ a:active {
   display: flex;
   flex-wrap: wrap;       /* permite varias filas si hay muchas imágenes */
   justify-content: center; /* centra las imágenes horizontalmente */
-  gap: 20px;             /* espacio entre imágenes */
 }
 
 #menu-bebidas img {
-  width: 200px;          /* ancho fijo para uniformidad */
-  height: 200px;         /* alto fijo */
-  object-fit: cover;     /* recorta sin deformar */
-  border-radius: 10px;   /* opcional */
+  display: block;
+  margin: 0 auto;       /* centra horizontalmente */
+  width: 100%;          /* hace que se ajuste al ancho disponible */
+  max-width: auto;     /* evita que se estire demasiado en pantallas grandes (puedes cambiar el valor) */        /* mantiene la proporción original */
+  max-height: auto;
 }
 
 #menu-platos h3 {
@@ -117,7 +117,22 @@ a:active {
 }
 
 #menu-platos p {
+  text-align: center;
   color: #C0C0BF;         
   margin-top: 5px;
   font-size: 16px;
+}
+
+#menu-bebidas p {
+  text-align: center;
+  color: #C0C0BF;         
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+#menu-bebidas h3 {
+  text-align: center;
+  color: white;         
+  margin-top: 10px;
+  font-size: 25px;
 }
