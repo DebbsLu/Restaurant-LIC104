@@ -1,6 +1,4 @@
 .mesasSP2 {
-    display: flex;
-    gap: 50px;
     border: 1px solid #fff;
     border-radius: 20px;
     padding-top: 5px;
@@ -8,6 +6,9 @@
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
 }
 
 .mesasp12 {
@@ -15,6 +16,12 @@
   justify-content: center;
   align-items: center;
   position: relative;
+
+  padding: 25px 0px 25px 0px;
+}
+
+#mesa12-2{
+  padding-top: 1px !important;
 }
 
 .mesa12 {
@@ -22,6 +29,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+
+.mesasp22{
+  padding: 75px 0px 50px 0px;
 }
 
 /* ---------- RECTÁNGULO CENTRAL ---------- */
@@ -32,13 +44,14 @@
   width: 120px;
   height: 60px;
   display: flex;
-  justify-content: space-between; /* p izquierda, círculo derecha */
+  justify-content: center; /* p izquierda, círculo derecha */
   align-items: center;
   flex-direction: row;
   z-index: 2; 
   gap: 8px;
   padding: 0 8px; 
 }
+
 
 /* Texto dentro del rectángulo */
 .rectanguloD2 p {
@@ -52,7 +65,7 @@
 
 /* ---------- CÍRCULOS IZQUIERDO Y DERECHO (semicirculares debajo del rectángulo) ---------- */
 .circleDI2,
-.circleDD2 {
+.circleDD2, .circleDA2, .circleDAB2  {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -60,6 +73,24 @@
   border-radius: 50%;
   z-index: 1;
 }
+
+
+
+
+/* Círculo superior */
+.circleDA2 {
+  top: -20px;       /* distancia desde el borde superior del contenedor .mesa12 */
+  left: 50%;        /* centrado horizontal respecto al rectángulo */
+  transform: translateX(-50%);
+}
+
+/* Círculo inferior */
+.circleDAB2 {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 /* Izquierdo */
 .circleDI2 {
@@ -69,6 +100,36 @@
 /* Derecho */
 .circleDD2 {
   right: -20px;
+}
+
+/* Solo los círculos dentro de mesasp22 */
+.mesasp22 .circleDI2,
+.mesasp22 .circleDD2,
+.mesasp22 .circleDA2,
+.mesasp22 .circleDAB2 {
+    background-color: #030403;
+}
+
+
+/* Rectángulo de la mesa normal */
+.rectanguloD2.normal {
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    width: 100px;
+    height: 60px;
+}
+
+/* Rectángulo de la mesa rotada */
+.rectanguloD2.rotada {
+    
+    background-color: #45413E;
+    
+}
+
+/* Mesa rotada completa */
+.mesa-rotada {
+    transform: rotate(-15deg);
+    transform-origin: center bottom;
 }
 
 /* ---------- CÍRCULO FONDO Y CÍRCULO INTERIOR ---------- */

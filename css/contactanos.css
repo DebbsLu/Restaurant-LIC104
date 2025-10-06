@@ -206,16 +206,19 @@ form{
 
 .notiK {
   position: relative;
-    width: fit-content; /* se ajusta al tamaño del fondo */
-  margin: 0 auto;     /* centra el div en la página */
+    width: fit-content; 
+  margin: 0 auto;     
 }
 
 .fondonotiK {
   background-color: #D9D9D9;
   border-radius: 30px;
-  padding: 10px 40px 10px 40px; /* deja espacio a la derecha para el botón */
+  padding: 4px 24px 4px 24px; 
   position: relative;
   z-index: 1;
+  min-height: unset;
+  display: flex;
+  align-items: center;
 }
 
 #mensajeK {
@@ -223,12 +226,17 @@ form{
   color: #765437;
   text-align: left;
   margin: 0;
+  font-size: 16px; 
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px; 
 }
 
 .notiK button {
    position: absolute;
-  top: -10px;   /* lo mueve hacia arriba fuera del fondo */
-  right: 10px; /* lo mueve hacia la derecha fuera del fondo */
+  top: -10px;  
+  right: 10px; 
   background-color: #313630;
   color: #FFFFFF;
   font-family: "Elsie Swash Caps", serif;
@@ -239,10 +247,38 @@ form{
   cursor: pointer;
   font-size: 16px;
   line-height: 1;
-  z-index: 2; /* asegura que esté por encima del fondo */
+  z-index: 2; 
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 .notiK button:hover {
-  background-color: #444944; /* tono más claro al pasar el ratón */
+  background-color: #444944; 
+}
+.notiK {
+  position: fixed;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%) translateY(20px); /* posición inicial fuera de vista */
+  width: auto;
+  margin: 0;
+  z-index: 9999;
+  display: none; 
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  border-radius: 16px;
+  background: transparent; 
+    opacity: 0; /* invisible al inicio */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Estado visible con animación */
+.notiK.show {
+  display: block;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); /* sube suavemente */
+}
+
+/* Estado de salida (opcional si se quiere animar al cerrar) */
+.notiK.hide {
+  opacity: 0;
+  transform: translateX(-50%) translateY(20px);
 }
