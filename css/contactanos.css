@@ -202,3 +202,68 @@ form{
     padding: 54px 106px;
   }
 }
+
+
+.notiK {
+  position: relative;
+    width: fit-content; 
+  margin: 0 auto;     
+}
+
+.fondonotiK {
+  background-color: #D9D9D9;
+  border-radius: 30px;
+  padding: 4px 24px 4px 24px; 
+  position: relative;
+  z-index: 1;
+  min-height: unset;
+  display: flex;
+  align-items: center;
+}
+
+#mensajeK {
+  font-family: "Elsie Swash Caps", serif;
+  color: #765437;
+  text-align: left;
+  margin: 0;
+  font-size: 16px; 
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px; 
+}
+
+.notiK button {
+   position: absolute;
+  top: -10px;  
+  right: 10px; 
+  background-color: #313630;
+  color: #FFFFFF;
+  font-family: "Elsie Swash Caps", serif;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  z-index: 2; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.notiK button:hover {
+  background-color: #444944; 
+}
+.notiK {
+  position: fixed;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  width: auto;
+  margin: 0;
+  z-index: 9999;
+  display: none; 
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  border-radius: 16px;
+  background: transparent; 
+}
