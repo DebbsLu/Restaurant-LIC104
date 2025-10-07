@@ -1,7 +1,7 @@
 /*Contenedor para todos los elementos*/
 #contenedor-desarrolladores {
   position: relative;
-  margin-top: 20px;
+  margin-top: 80px;
   width: 100%; /* base flexible */
   height: auto; /* que crezca según contenido o JS */
   max-width: 100%;
@@ -51,6 +51,36 @@
   backdrop-filter: blur(12px); 
 }
 
+.dot-1{
+  background-image: url("../img/desarrolladores/Kat.png");
+    background-size: cover;        /* Para que la imagen cubra todo el div */
+}
+
+
+.dot-2{
+background-image: url("../img/desarrolladores/Lin-removebg-preview.png");
+background-size: cover;        /* Para que la imagen cubra todo el div */
+}
+
+
+.dot-3{
+background-image: url("../img/desarrolladores/Deb.png");
+background-size: cover;        /* Para que la imagen cubra todo el div */
+ background-position: center;
+}
+
+.dot-4{
+  background-image: url("../img/desarrolladores/Mon.png");
+background-size: cover;        /* Para que la imagen cubra todo el div */
+ background-position: center;
+}
+
+.dot-5{
+  background-image: url("../img/desarrolladores/Will.png");
+background-size: cover;        /* Para que la imagen cubra todo el div */
+ 
+}
+ 
 /*-------------Rectángulos con datos*/
 .rec {
   position: absolute;

@@ -65,5 +65,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     setupResponsive();
-    window.addEventListener('resize', setupResponsive);
+    /*window.addEventListener('resize', setupResponsive);*/
+    let lastWidth = window.innerWidth;
+window.addEventListener('resize', () => {
+  // Solo ejecutar setupResponsive si cambia el ancho, no la altura
+  if (window.innerWidth !== lastWidth) {
+    lastWidth = window.innerWidth;
+    setupResponsive();
+  }
+});
+
 });
