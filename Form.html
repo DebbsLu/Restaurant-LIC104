@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/reservaExtrarform.css">
     <link rel="stylesheet" href="css/btnregresar.css">
 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Flatpickr CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <!-- Flatpickr JS -->
@@ -24,16 +25,16 @@
 
         <div class="contenedorformD"> 
 
-            <h1>Reserva</h1>
-            <h2>Inicie su proceso</h2>
+            <h1 data-aos="fade-down" data-aos-delay="0">Reserva</h1>
+            <h2 data-aos="fade-down" data-aos-delay="100">Inicie su proceso</h2>
         
-            <div class="formhr"></div> <!--división-->
+            <div class="formhr" data-aos="fade-right" data-aos-delay="100"></div> <!--división-->
 
             <!-- ================= FORMULARIO DE RESERVACIÓN ================= -->
             <div class="formulario-reserva">
 
             <!-- Campo: Nombre y Apellido -->
-            <div class="campo-form">
+            <div class="campo-form" data-aos="fade-right" data-aos-delay="300">
                 <p class="indicacion">Ingrese su nombre y apellido</p>
                 <div class="grupo-input">
                 <label for="nombre" class="etiqueta">Nombre y Apellido</label>
@@ -42,7 +43,7 @@
             </div>
 
             <!-- Campo: Email -->
-            <div class="campo-form">
+            <div class="campo-form" data-aos="fade-right" data-aos-delay="400">
                 <p class="indicacion">Ingrese su email</p>
                 <div class="grupo-input">
                 <label for="email" class="etiqueta">Email</label>
@@ -52,7 +53,7 @@
 
             <!--<p class="indicacion">Ingrese su fecha de reservación</p>-->
             <!-- Campo: Fecha -->
-            <div class="campo-form campo-pequeño">
+            <div class="campo-form campo-pequeño" data-aos="fade-up" data-aos-delay="500">
                 <p class="indicacion">Ingrese su fecha de reservación</p>
                 <div class="grupo-input">
                 <label for="fecha" class="etiqueta">Fecha</label>
@@ -63,7 +64,7 @@
 
             <!--<p class="indicacion">Ingrese su hora de reservación</p>-->
             <!-- Campo: Hora -->
-            <div class="campo-form campo-pequeño">
+            <div class="campo-form campo-pequeño" data-aos="fade-up" data-aos-delay="400">
                 <p class="indicacion">Ingrese su hora de reservación</p>
                 <div class="grupo-input">
                 <label for="hora" class="etiqueta">Hora</label>
@@ -226,6 +227,8 @@
 <script src="js/funcionalidad.js" defer></script>
 <script src="js/form.js" defer></script>
 <script src="js/desarrolladores.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/animacionesindex.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
