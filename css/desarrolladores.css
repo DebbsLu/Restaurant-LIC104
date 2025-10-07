@@ -1,0 +1,120 @@
+/*Contenedor para todos los elementos*/
+#contenedor-desarrolladores {
+  position: relative;
+  margin-top: 80px;
+  width: 100%; /* base flexible */
+  height: auto; /* que crezca según contenido o JS */
+  max-width: 100%;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.rec span {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.rec span.hovered {
+  color: white;
+  text-shadow: 0 0 8px white, 0 0 12px white;
+}
+
+
+/* Teléfonos */
+@media (max-width: 576px) 
+{
+
+  #contenedor-desarrolladores {
+  
+  margin-top: 0px;
+  
+}
+
+}
+
+
+/*"Desarrolladores"*/
+#texto-desarrolladores {
+  z-index: 2;
+  color: #FDD17A;
+  font-family: 'Elsie Swash Caps', cursive;
+  position: absolute;
+}
+
+/*Semicírculo*/
+#semicirculo {
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 57, 51, 0.5); 
+  backdrop-filter: blur(80px);
+  position: relative;
+  display: flex;
+  background-image: url('../img/desarrolladores/Noise.png'); 
+  border-radius: 0; /* Será ajustado por JS */
+}
+
+/*-------------Círculos con fotografías*/
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: rgba(217, 217, 217, 0.2);
+  backdrop-filter: blur(12px); 
+}
+
+.dot-1{
+  background-image: url("../img/desarrolladores/Kat.png");
+    background-size: cover;        /* Para que la imagen cubra todo el div */
+}
+
+
+.dot-2{
+background-image: url("../img/desarrolladores/Lin-removebg-preview.png");
+background-size: cover;        /* Para que la imagen cubra todo el div */
+}
+
+
+.dot-3{
+background-image: url("../img/desarrolladores/Deb.png");
+background-size: cover;        /* Para que la imagen cubra todo el div */
+ background-position: center;
+}
+
+.dot-4{
+  background-image: url("../img/desarrolladores/Mon.png");
+background-size: cover;        /* Para que la imagen cubra todo el div */
+ background-position: center;
+}
+
+.dot-5{
+  background-image: url("../img/desarrolladores/Will.png");
+background-size: cover;        /* Para que la imagen cubra todo el div */
+ 
+}
+ 
+/*-------------Rectángulos con datos*/
+.rec {
+  position: absolute;
+  background-color: rgba(217, 217, 217, 0.2);
+  backdrop-filter: blur(5px);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  line-height: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.rec span {
+  font-family: "Federo", sans-serif;
+}
+
+/*-------------Líneas decorativas*/
+.linea-decorativa {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  background: transparent;
+}

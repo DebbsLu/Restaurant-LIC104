@@ -3,6 +3,7 @@
 body
 {
     background-color: #65717D;
+    /*background-color: #030403;*/
     /*background-image: url("../img/aerial-wallpaper-in-birch-1040-mm-architextures.jpg");*/
 }
 
@@ -13,4 +14,30 @@ background-color: #181818;
 /*background-image: url("../img/waves-black-4000-mm-architextures.jpg");*/
 background-image: url("../img/body/big-furada-midnight-4000-mm-architextures2.jpg");
 background-size: contain;
+margin-top: 15px;
+padding: 15px;
+ width: 95vw;          /* ocupa el 95% del ancho de la ventana */
+  max-width: 95%;       /* alternativa de seguridad */
+    height: auto;
+  min-height: 100vh; /* mantiene una altura mínima igual al alto de la ventana */
+  overflow: hidden;  /* evita scrolls vacíos innecesarios */
+}
+
+
+/* Teléfonos */
+@media (max-width: 576px) 
+{
+ #cuerponuevo{
+margin: 0;
+    padding: 5px;
+      width: 100%;        /* ocupa todo en teléfonos */
+      max-width: 100%;
+    box-sizing: border-box;  /* mantiene el contenido dentro sin desbordar ESTO SOLUCIONO LO DE LOS BORDES DE BODY EN TEL */
+} 
+}
+
+/* Tablets */
+@media (min-width: 577px) and (max-width: 992px) 
+{
+  
 }

@@ -1,0 +1,73 @@
+{
+  "platos": [
+    {
+      "id": 1,
+      "imagen": "/img/menu/Platos/Plato1.png",
+       "nombre": "Risotto de Hongos Silvestres",
+      "descripcion": "Arroz cremoso cocido lentamente con hongos frescos, parmesano y un toque de mantequilla artesanal.",
+      "precio": "$ 19.00"
+    },
+    {
+      "id": 2,
+      "imagen": "img/menu/Platos/Plato2.png",
+      "nombre": "Salmón a la Parrilla con Cítricos",
+      "descripcion": "Filete de salmón fresco acompañado de una salsa ligera de naranja y limón, servido con espárragos al vapor.",
+      "precio": "$ 23.50"
+    },
+    {
+      "id": 3,
+      "imagen": "img/menu/Platos/Plato3.png",
+      "nombre": "Lomo en Salsa de Vino Tinto",
+      "descripcion": "Tierna pieza de lomo sellada a la perfección, bañada en una reducción de vino tinto con notas de romero y ajo.",
+      "precio": "$ 27.00"
+    },
+    {
+      "id": 4,
+      "imagen": "img/menu/Platos/plato4.png",
+      "nombre": "Tataki de Res al Demi-glace",
+      "descripcion": "Filete de res marinado y sellado al estilo tataki, con reducción de vino demi-glace, tomillo fresco y pan brioche.",
+      "precio": "$ 32.00"
+    },
+    {
+      "id": 5,
+      "imagen": "img/menu/Platos/plato5.png",
+      "nombre": "Crostini de Hongos y Anchoas",
+      "descripcion": "Crostini con hongos silvestres, anchoas del Cantábrico, hoja de albahaca, aceite de trufa y chalotas sobre pan baguette tostado.",
+      "precio": "$ 17.50"
+    },
+    {
+      "id": 6,
+      "imagen": "img/menu/Platos/plato6.png",
+      "nombre": "Pollo Relleno de Espinaca y Queso Feta",
+      "descripcion": "Jugosa pechuga de pollo rellena con espinaca salteada y queso feta, servida sobre un suave puré de papas rústico.",
+      "precio": "$ 21.00"
+    }
+  ],
+
+  "bebidas": [
+    {
+      "id": 1,
+      "imagen": "img/menu/Bebidas/bebida1.png"
+    },
+    {
+      "id": 2,
+      "imagen": "img/menu/Bebidas/bebida2.png"
+    },
+    {
+      "id": 3,
+      "imagen": "img/menu/Bebidas/bebida3.png"
+    },
+    {
+      "id": 4,
+      "imagen": "img/menu/Bebidas/bebida4.png"
+    },
+    {
+      "id": 5,
+      "imagen": "img/menu/Bebidas/bebida5.png"
+    },
+    {
+      "id": 6,
+      "imagen": "img/menu/Bebidas/bebida6.png"
+    }
+  ]
+}

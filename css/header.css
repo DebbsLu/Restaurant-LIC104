@@ -2,8 +2,11 @@ header
 {
     backdrop-filter: blur(10px);       /* Aplica el desenfoque */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);  /* Sombra para profundidad */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil para "vidrio" */
-}
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil para "vidrio" */
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(0,0,0, 0.5);
+  }
 
 
 header h3
@@ -45,13 +48,6 @@ header h2{
     margin-left: 47%;
 }
 
-#planta{
-    position: absolute;
-    z-index: 0;
-    width: 200px;
-    margin-left: 15px;
-    top: 245px;
-}
 
     .linea-circulo {
       display: flex;

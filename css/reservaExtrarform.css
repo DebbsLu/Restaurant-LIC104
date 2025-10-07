@@ -1,0 +1,16 @@
+.circleFondo,
+.circleFondo2 {
+  transition: background-color 0.3s ease;
+}
+
+.circleDentroBorde,
+.circleDentroBorde2 {
+  transition: background-color 0.3s ease;
+}
+
+.rectanguloD:hover,
+.rectanguloD2:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+}
