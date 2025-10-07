@@ -8,6 +8,16 @@
   transition: width 0.3s ease, height 0.3s ease;
 }
 
+.rec span {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.rec span.hovered {
+  color: white;
+  text-shadow: 0 0 8px white, 0 0 12px white;
+}
+
+
 /* Teléfonos */
 @media (max-width: 576px) 
 {

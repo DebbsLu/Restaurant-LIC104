@@ -183,7 +183,7 @@ if (width >= 577) {
     contenedor.style.width = (600 * escala) + 'px';
     contenedor.style.height = (300 * escala) + 'px';
 
-    texto.style.fontSize = (45 * escala) + 'px';
+    texto.style.fontSize = (40 * escala) + 'px';
     texto.style.top = (72 * escala) + 'px';
     texto.style.left = '50%';
     texto.style.transform = 'translateX(-50%)';

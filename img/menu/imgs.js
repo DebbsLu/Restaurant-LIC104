@@ -19,9 +19,12 @@ function mostrarSeccion(idContenedor, elementos) {
   const contenedor = document.getElementById(idContenedor);
   contenedor.innerHTML = ""; // Limpia por si hay algo
 
-  elementos.forEach(item => {
+  elementos.forEach((item, index) => {
     const col = document.createElement("div");
     col.classList.add("col-4", "text-center");
+    col.style.opacity = 0;
+    col.style.transform = 'translateY(30px)';
+    col.dataset.delay = index * 150; // retraso por elemento
 
     const img = document.createElement("img");
     img.src = item.imagen;
@@ -29,19 +32,24 @@ function mostrarSeccion(idContenedor, elementos) {
     img.classList.add("img-fluid");
 
     const nombre = document.createElement("h3");
-    const descripcion = document.createElement("p")
-    const precio = document.createElement("h3")
-    descripcion.textContent = item.descripcion;
-    nombre.textContent = item.nombre;
-    precio.textContent = item.precio;
+    const descripcion = document.createElement("p");
+    const precio = document.createElement("h3");
+
+    descripcion.textContent = item.descripcion || "";
+    nombre.textContent = item.nombre || "";
+    precio.textContent = item.precio || "";
 
     col.appendChild(img);
     col.appendChild(nombre);
     col.appendChild(descripcion);
     col.appendChild(precio);
     contenedor.appendChild(col);
+
+    // Usar el observer para animar al entrar en viewport
+    observer.observe(col);
   });
 }
+
 
 // Código para el carrusel con el json
 document.addEventListener("DOMContentLoaded", () => {
@@ -70,3 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(err => console.error("Error cargando los platos:", err));
 });
+
+
+
