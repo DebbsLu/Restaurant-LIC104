@@ -169,3 +169,5 @@ if(texto){
 
   textoObserver.observe(texto);
 }
+
+
