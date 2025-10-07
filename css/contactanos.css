@@ -1,7 +1,18 @@
 .contactoK{
-  margin-top: 120px;
+  margin-top: 140px;
 }
 
+/* Teléfonos */
+@media (max-width: 576px) 
+{
+ .contactoK{
+  margin-top: 2px!important ;
+}
+
+.tituloK {
+  margin-top: 0px;
+}
+}
 
 /* Título */
 .tituloK {
@@ -184,16 +195,38 @@ form{
 
 }
 
-/* Tablets */
-@media (min-width: 577px) and (max-width: 992px) {
+
+
+
+/* Tablets portrait */
+@media (min-width: 577px) and (max-width: 992px) and (orientation: portrait) {
   .form-containerK {
-    width: 55%;
+    width: 75%;
     padding: 40px 50px;
+    
   }
+
+  #contactanos123{
+  margin-top: 0px;
+  }
+
   .tituloK {
     font-size: 40px;
+  
   }
 }
+
+/* Tablets landscape */
+@media (min-width: 577px) and (max-width: 992px) and (orientation: landscape) {
+  .form-containerK {
+    width: 60%; /* Por ejemplo, más ancho para landscape */
+    padding: 30px 40px; /* Diferente padding */
+  }
+  .tituloK {
+    font-size: 45px; /* Puede ser más grande en horizontal */
+  }
+}
+
 
 /* Escritorio */
 @media (min-width: 993px) {

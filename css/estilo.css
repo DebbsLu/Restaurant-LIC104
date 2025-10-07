@@ -18,7 +18,11 @@ margin-top: 15px;
 padding: 15px;
  width: 95vw;          /* ocupa el 95% del ancho de la ventana */
   max-width: 95%;       /* alternativa de seguridad */
+    height: auto;
+  min-height: 100vh; /* mantiene una altura mínima igual al alto de la ventana */
+  overflow: hidden;  /* evita scrolls vacíos innecesarios */
 }
+
 
 /* Teléfonos */
 @media (max-width: 576px) 

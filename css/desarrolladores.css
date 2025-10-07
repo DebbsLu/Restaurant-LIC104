@@ -1,12 +1,25 @@
 /*Contenedor para todos los elementos*/
 #contenedor-desarrolladores {
   position: relative;
-  margin-top: 40px;
+  margin-top: 20px;
   width: 100%; /* base flexible */
   height: auto; /* que crezca según contenido o JS */
   max-width: 100%;
   transition: width 0.3s ease, height 0.3s ease;
 }
+
+/* Teléfonos */
+@media (max-width: 576px) 
+{
+
+  #contenedor-desarrolladores {
+  
+  margin-top: 0px;
+  
+}
+
+}
+
 
 /*"Desarrolladores"*/
 #texto-desarrolladores {

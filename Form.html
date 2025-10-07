@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante</title>
+    <title>Reserva</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/btnmesas.css">
     <link rel="stylesheet" href="css/btnmesas2.css">
     <link rel="stylesheet" href="css/responsiveform.css">
+    <link rel="stylesheet" href="css/reservaExtrarform.css">
+    <link rel="stylesheet" href="css/btnregresar.css">
+
+    <!-- Flatpickr CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<!-- Flatpickr JS -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr" defer></script>
+
 </head>
 <body class="d-flex min-vh-100">
     <div id="cuerponuevo" class="container rounded "> <!--Adentro de acá va todo dude-->
@@ -19,7 +27,7 @@
             <h1>Reserva</h1>
             <h2>Inicie su proceso</h2>
         
-            <div class="formhr"></div>
+            <div class="formhr"></div> <!--división-->
 
             <!-- ================= FORMULARIO DE RESERVACIÓN ================= -->
             <div class="formulario-reserva">
@@ -42,24 +50,29 @@
                 </div>
             </div>
 
+            <!--<p class="indicacion">Ingrese su fecha de reservación</p>-->
             <!-- Campo: Fecha -->
             <div class="campo-form campo-pequeño">
                 <p class="indicacion">Ingrese su fecha de reservación</p>
                 <div class="grupo-input">
                 <label for="fecha" class="etiqueta">Fecha</label>
-                <input type="date" id="fecha" />
+                <!--<input type="date" id="fecha" />-->
+                <input type="text" id="fecha" placeholder="Selecciona una fecha" readonly>
                 </div>
             </div>
 
+            <!--<p class="indicacion">Ingrese su hora de reservación</p>-->
             <!-- Campo: Hora -->
             <div class="campo-form campo-pequeño">
                 <p class="indicacion">Ingrese su hora de reservación</p>
                 <div class="grupo-input">
                 <label for="hora" class="etiqueta">Hora</label>
-                <input type="time" id="hora" />
+                <!--<input type="time" id="hora" />-->
+                <input type="text" id="hora" placeholder="Selecciona una hora" disabled>
                 </div>
             </div>
 
+            <p class="indicacion">Seleccione su mesa</p>
     <div class="mesasPP">
             <div class="mesasp1">
                 <div class="mesa1">
@@ -101,9 +114,7 @@
 
 
         <div class="mesasSP2">
-
             <div class="mesasp21">
-
                 <div class="mesasp12">
                     <div class="mesa12" id="mesa12-2">
                         <div class="circleDI2"></div>
@@ -143,9 +154,7 @@
                     </div>
                 </div>
             </div> <!--Mesas21 primera columna de mesas grises-->
-
             <div class="mesasp22">
-
                 <!-- Conjunto 1: mesa normal -->
                 <div class="mesasp12">
                     <div class="mesa12 mesa-rotada">
@@ -161,7 +170,6 @@
                         <div class="circleDAB2"></div> <!-- círculo inferior -->
                     </div>
                 </div>
-
                 <!-- Conjunto 2: mesa rotada -->
                 <div class="mesasp12">
                     <div class="mesa12">
@@ -173,18 +181,50 @@
                         <div class="circleDAB2"></div> <!-- círculo inferior -->
                     </div>
                 </div>
+          </div> <!--mesas22-->
+
 
         </div>
 
 
-        </div>
 
-        <button type="submit" class="botonFormD">Enviar</button>
+
+        <!--<button type="submit" class="botonFormD">Enviar</button>-->
             </div> <!--Form 1-->
+
+        <div class="notiK">  
+                <button id="cerrarNoti">x</button>
+                <div class="fondonotiK">
+                    <p id="mensajeK"></p>
+                </div>
+        </div> 
+           
         </div> <!--Form 2-->
 
+        <button type="submit" class="botonFormD">Enviar</button>
+
+        <!--Botón ;D-->
+            <div class="linea-circulo">
+               <!-- <img id="planta" src="img/planta3.png" alt="">-->
+                <!--Linea y circulo del lado izquierdo-->
+                <div class="circulo"></div>
+                <div class="linea" id="linizq"></div>
+                <!--Linea y circulo del lado izquierdo-->
+                <div class="boton-container">
+                <button class="boton-decorado rounded">Volver a anterior</button>
+                <div class="rectangulo"></div>
+                </div>
+                <!--Linea y circulo del lado derecho-->
+                <div class="linea" id="linder"></div>
+                <div class="circulo"></div>
+                <!--Linea y circulo del lado derecho-->
+            </div>
+            <!--Botón ;D-->
+
     </div>
-<script src="js/form.js"></script>
+
+<script src="js/funcionalidad.js" defer></script>
+<script src="js/form.js" defer></script>
 <script src="js/desarrolladores.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

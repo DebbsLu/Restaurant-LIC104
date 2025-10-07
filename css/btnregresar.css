@@ -1,0 +1,56 @@
+    .linea-circulo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 55px;
+    }
+
+    .linea {
+      width: 20px;
+      height: 1px;
+      /*background-color: #41200E;*/
+      background-color: #9D9284;
+    }
+
+    #linizq
+    {
+        margin: 0 10px 0 0;
+    }
+
+    #linder{
+        margin: 0 0 0 10px;
+    }
+
+    .circulo {
+      width: 6px;
+      height: 6px;
+      background-color: #9D9284;
+      border-radius: 50%;
+    }
+
+    .rectangulo
+    {
+        position: absolute;
+        border: 1px solid #9D9284;
+        padding: 30px 85px;
+        z-index: 1;
+        margin-left: 7%;
+    }
+
+    .boton-container {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .boton-decorado {
+      background-color: #2E2B28;
+      font-family: "Federo", sans-serif;
+      color: #FFFFFF;
+      padding: 8px 40px;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+    }

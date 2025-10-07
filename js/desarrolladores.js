@@ -5,10 +5,21 @@ const cuerponuevo = document.getElementById('cuerponuevo');
 const anchoDisponible = cuerponuevo.offsetWidth; // ancho real del contenedor padre
 
 // Definimos un ancho base de referencia (por ejemplo, el tamaño en escritorio normal)
-const anchoBase = 1000; // referencia visual; ajusta si tu diseño base es más pequeño
+//const anchoBase = 1000; // referencia visual; ajusta si tu diseño base es más pequeño
 /*const escala = Math.min(1, anchoDisponible / anchoBase); // nunca crece más del 100%*/
-const escala = Math.min(1.4, anchoDisponible / anchoBase);
+//const escala = Math.min(1.4, anchoDisponible / anchoBase);
 
+const anchoBase = 1000;
+let escala;
+
+// Escala dinámica según dispositivo
+if (window.innerWidth >= 577 && window.innerWidth <= 992) {
+    // TABLET → aumentar escala para que se vea más grande
+    escala = Math.min(1.8, (anchoDisponible / anchoBase) * 1.4);
+} else {
+    // Teléfonos y escritorio → mantener como antes
+    escala = Math.min(1.4, anchoDisponible / anchoBase);
+}
 
 
 

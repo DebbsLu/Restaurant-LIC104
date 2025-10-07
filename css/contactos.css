@@ -5,7 +5,7 @@
   font-family: 'Elsie Swash Caps', cursive;
   font-size: 48px;
   color: #FDD17A;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 html
 {
@@ -272,6 +272,13 @@ margin-top: 5px;
     max-height: 0;
     pointer-events: none;
     transition: opacity 0.4s, max-height 0.4s;
+}
+
+
+/*NUEVO*/
+
+.oculto {
+  display: none !important;
 }
 
 
