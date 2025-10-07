@@ -96,6 +96,7 @@ a:active {
   margin-bottom: 2rem;
 }
 
+/*Todo lo del menu de bebidas y platos*/
 #menu-bebidas {
   display: flex;
   flex-wrap: wrap;       /* permite varias filas si hay muchas imágenes */
@@ -135,4 +136,19 @@ a:active {
   color: white;         
   margin-top: 10px;
   font-size: 25px;
+}
+
+/* --- Versión de PC (por defecto) --- */
+#carrusel-celular {
+  display: none;
+}
+/* --- Versión móvil (pantallas de 768px o menos) --- */
+@media (max-width: 768px) {
+  #contenedor-pc {
+    display: none;
+  }
+
+  #carrusel-celular {
+    display: block;
+  }
 }

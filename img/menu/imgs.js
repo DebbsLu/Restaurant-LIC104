@@ -37,3 +37,31 @@ function mostrarSeccion(idContenedor, elementos) {
     contenedor.appendChild(col);
   });
 }
+
+// Código para el carrusel con el json
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("img/menu/Imagenesmenu.json")
+    .then(res => res.json())
+    .then(datos => {
+      const platos = datos.platos;
+      const contenedor = document.getElementById("carousel-inner");
+
+      platos.forEach((plato, index) => {
+        const item = document.createElement("div");
+        item.classList.add("carousel-item");
+        if (index === 0) item.classList.add("active"); // primer elemento activo
+
+        item.innerHTML = `
+          <img src="${plato.imagen}" class="d-block w-100" alt="${plato.nombre}">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>${plato.nombre}</h3>
+            <p>${plato.descripcion}</p>
+            <h3>${plato.precio}</h3>
+          </div>
+        `;
+
+        contenedor.appendChild(item);
+      });
+    })
+    .catch(err => console.error("Error cargando los platos:", err));
+});
