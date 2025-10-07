@@ -52,12 +52,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (index === 0) item.classList.add("active"); // primer elemento activo
 
         item.innerHTML = `
+          <h3>${plato.nombre}</h3>
           <img src="${plato.imagen}" class="d-block w-100" alt="${plato.nombre}">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>${plato.nombre}</h3>
-            <p>${plato.descripcion}</p>
-            <h3>${plato.precio}</h3>
-          </div>
+          <p>${plato.descripcion}</p>
+          <h3>${plato.precio}</h3>
         `;
 
         contenedor.appendChild(item);

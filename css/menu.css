@@ -97,13 +97,15 @@ a:active {
 }
 
 /*Todo lo del menu de bebidas y platos*/
-#menu-bebidas {
+#menu-bebidas,
+#carrusel-bebidas {
   display: flex;
   flex-wrap: wrap;       /* permite varias filas si hay muchas imágenes */
   justify-content: center; /* centra las imágenes horizontalmente */
 }
 
-#menu-bebidas img {
+#menu-bebidas img,
+#carrusel-bebidas img {
   display: block;
   margin: 0 auto;       /* centra horizontalmente */
   width: 100%;          /* hace que se ajuste al ancho disponible */
@@ -111,44 +113,57 @@ a:active {
   max-height: auto;
 }
 
-#menu-platos h3 {
-  color: white;         
+/* Estilos comunes*/
+#menu-platos-container h1,
+#menu-bebidas-container h1,
+#carrusel-platos h1,
+#carrusel-bebidas h1 {
+  text-align: center;
+  color: #FDD17A;
+  margin-top: 10px;
+  font-size: 45px;
+}
+
+#menu-platos h3,
+#menu-bebidas h3,
+#carrusel-platos h3,
+#carrusel-bebidas h3 {
+  text-align: center;
+  color: white;
   margin-top: 10px;
   font-size: 25px;
 }
 
-#menu-platos p {
+#menu-platos p,
+#menu-bebidas p,
+#carrusel-platos p,
+#carrusel-bebidas p {
   text-align: center;
-  color: #C0C0BF;         
+  color: #C0C0BF;
   margin-top: 5px;
   font-size: 16px;
 }
 
-#menu-bebidas p {
-  text-align: center;
-  color: #C0C0BF;         
-  margin-top: 5px;
-  font-size: 16px;
-}
-
-#menu-bebidas h3 {
-  text-align: center;
-  color: white;         
-  margin-top: 10px;
-  font-size: 25px;
-}
 
 /* --- Versión de PC (por defecto) --- */
-#carrusel-celular {
-  display: none;
+#carrusel-celular,
+#carrusel-bebidas {
+  display: none; /* Oculta carruseles en pantallas grandes */
 }
+
 /* --- Versión móvil (pantallas de 768px o menos) --- */
 @media (max-width: 768px) {
-  #contenedor-pc {
-    display: none;
+  /* Oculta los contenedores normales de PC */
+  #menu-platos-container,
+  #menu-bebidas-container {
+    display: none !important;
   }
 
-  #carrusel-celular {
-    display: block;
+  /* Muestra los carruseles en móvil */
+  #carrusel-celular,
+  #carrusel-bebidas {
+    display: block !important;
   }
 }
+
+

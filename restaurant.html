@@ -51,29 +51,35 @@
 
         <!---------------------------------------Menu(platos bro)--------------------------------------------->
         <!--Version de PC-->
-        <div class="container menu-container rounded my-4">
+        <div class="container menu-container rounded my-4" id="menu-platos-container">
             <h1 style="text-align: center; color: #FDD17A; size: 25px;">Platos</h1>
             <div class="row menu" id="menu-platos"></div>     
         </div>
 
         <!--Version de Celular/Carrousel-->
-        <div id="carrusel-celular" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
+        <div id="carrusel-platos" class="carousel slide d-block d-md-none menu-container rounded my-4" data-bs-ride="carousel">
+            <h1 style="text-align: center; color: #FDD17A; size: 25px;">Platos</h1>
             <div class="carousel-inner" id="carousel-inner"></div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-celular" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-platos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carrusel-celular" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carrusel-platos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
+
 
         <!---------------------------------------Menu(platos bro)--------------------------------------------->
 
 
 
         <!---------------------------------------Bebidas--------------------------------------------->
-        <div class="container menu-container rounded my-4">
+        <!--Version de PC-->
+        <div class="container menu-container rounded my-4" id="menu-bebidas-container">
             <h1>Bebidas</h1>
             <div class="row menu p-4" id="menu-bebidas">
                 <div class="row">
@@ -104,7 +110,7 @@
                     <h3>$ 15.00</h3>
                     </div>
                     <div class="col-4">
-                    <img src="img/menu/Bebidas/bebida5.png" style="max-width: 450px; max-height: 375px;">
+                    <img src="img/menu/Bebidas/bebida5.png" style="max-width: 400px; max-height: 375px;">
                     <h3>Sunset Breeze</h3>
                     <p>Tequila blanco, jugo de toronja rosada, sirope de agave y un toque de maracuyá, con decoración de rodajas cítricas y hielo en cubos grandes.</p>
                     <h3>$ 16.00</h3>
@@ -118,6 +124,66 @@
                 </div>
             </div>     
         </div>
+        <!--Version de Celular/Carrousel-->
+        <div id="carrusel-bebidas" class="carousel slide d-block d-md-none menu-container rounded my-4" data-bs-ride="carousel">
+            <h1>Bebidas</h1>
+            <!-- Imágenes o contenido -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h3>Ola Rosa</h3>
+                    <img src="img/menu/Bebidas/Bebida1.png" style="max-height: 350px; max-width: 175px; justify-content: center;">
+                    <p>Vodka premium con infusión de pitahaya (fruta del dragón), curaçao azul, jugo de piña y un toque de agua de coco. Servido en vaso alto, decorado con una rodaja de lima y pétalos comestibles.</p>
+                    <h3>$ 16.75</h3>
+                </div>
+
+                <div class="carousel-item">
+                    <h3>Paraíso de Maracuyá</h3>
+                    <img src="img/menu/Bebidas/Bebida2.png" style="max-width: 225px; max-height: 300px;">
+                    <p>Ron blanco premium con pulpa natural de maracuyá, jugo de piña y un toque de miel de caña, servido en vaso alto con hielo triturado y decoración de flor comestible.</p>
+                    <h3>$ 14.00</h3>
+                </div>
+
+                <div class="carousel-item">
+                    <h3>Blue Tropic</h3>
+                    <img src="img/menu/Bebidas/Bebida3.png" style="max-width: 300px; max-height: 375px;">
+                    <p>Ron de coco, curaçao azul, piña natural y un toque de crema ligera, servido en vaso largo con borde de azúcar tropical.</p>
+                    <h3>$ 13.75</h3>
+                </div>
+
+                <div class="carousel-item">
+                    <h3>Cítrico del Caribe</h3>
+                    <img src="img/menu/Bebidas/bebida4.png" style="max-width: 500px; max-height: 450px;">
+                    <p>Mezcla fresca de ron blanco, licor de naranja, jugo de limón y sirope de jengibre, servido con rodajas de cítricos y hielo granizado.</p>
+                    <h3>$ 15.00</h3>
+                </div>
+
+                <div class="carousel-item">
+                    <h3>Sunset Breeze</h3>
+                    <img src="img/menu/Bebidas/bebida5.png" style="max-width: 400px; max-height: 375px;">
+                    <p>Tequila blanco, jugo de toronja rosada, sirope de agave y un toque de maracuyá, con decoración de rodajas cítricas y hielo en cubos grandes.</p>
+                    <h3>$ 16.00</h3>
+                </div>
+
+                <div class="carousel-item">
+                    <h3>Isla Coral</h3>
+                    <img src="img/menu/Bebidas/bebida6.png" style="max-width: 290px; max-height: 375px;">
+                    <p>Vodka con agua de coco, puré de mango fresco y un toque de lima, agitado y servido con hojas de menta y hielo transparente.</p>
+                    <h3>$ 15.00</h3>
+                </div>
+            </div>
+
+            <!-- Botones de navegación -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-bebidas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carrusel-bebidas" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
         <!---------------------------------------Bebidas--------------------------------------------->
 
 
